@@ -13,7 +13,7 @@ export default function Hero() {
       <img className="coin coin--eth" src="/assets/img/coins/ethereum-f-320.png" alt="" loading="lazy" decoding="async" fetchPriority="low" />
       <img className="coin coin--sol" src="/assets/img/coins/solana-l-320.png" alt="" loading="lazy" decoding="async" fetchPriority="low" />
 
-      <div className="container hero__inner" data-reveal>
+      <div className="container hero__inner">
         <div>
           <span className="hero__eyebrow">
             <span className="dot" aria-hidden="true" />
