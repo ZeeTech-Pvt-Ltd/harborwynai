@@ -18,7 +18,7 @@ const HERO_STATS = [
 
 export default function AboutUs() {
   useMeta({
-    title: `About Us | ${BRAND}`,
+    title: `About Us — ${BRAND}`,
     description:
       'About Bright Kapitune — our story, purpose, team and the transparency and controls behind the platform.',
     canonical: `${SITE_URL}/about-us`,

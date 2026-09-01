@@ -8,7 +8,7 @@ import { BRAND, CONTACT_EMAIL, SITE_URL } from '../data/content'
 export default function LegalPage({ title, description, updated, children }) {
   const slug = title.toLowerCase().replace(/\s+/g, '-')
   useMeta({
-    title: `${title} | ${BRAND}`,
+    title: `${title} — ${BRAND}`,
     description,
     canonical: `${SITE_URL}/${slug}`,
   })

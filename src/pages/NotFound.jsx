@@ -4,7 +4,7 @@ import { BRAND } from '../data/content'
 
 export default function NotFound() {
   useMeta({
-    title: `Page Not Found | ${BRAND}`,
+    title: `Page Not Found — ${BRAND}`,
     description: "The page you're looking for doesn't exist. Head back to the Bright Kapitune homepage.",
   })
 
