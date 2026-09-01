@@ -21,16 +21,15 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
   const [fields, setFields] = useState(initialFields)
   const [status, setStatus] = useState(STATUS.idle)
   const [phoneError, setPhoneError] = useState('')
-  const [phoneReady, setPhoneReady] = useState(false)
   const honeypotRef = useRef(null)
   const phoneInputRef = useRef(null)
   const itiRef = useRef(null)
 
-  // The phone library (intl-tel-input + libphonenumber data) is heavy, so
-  // it initializes only when the user first focuses the phone field —
-  // keeping its parsing and the geo lookup off the initial load path.
+  // Code-split: intl-tel-input (with its utils) loads on demand via a
+  // dynamic import, so it stays out of the initial JS bundle while the
+  // flag + country code still appear as soon as the page renders.
   useEffect(() => {
-    if (!phoneReady || !phoneInputRef.current) return
+    if (!phoneInputRef.current) return
     let cancelled = false
     let iti = null
     import('intl-tel-input/intlTelInputWithUtils').then(({ default: intlTelInput }) => {
@@ -58,7 +57,7 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
       iti?.destroy()
       itiRef.current = null
     }
-  }, [phoneReady])
+  }, [])
 
   const setField = (name) => (e) =>
     setFields((f) => ({
@@ -183,8 +182,6 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
               name="phone"
               autoComplete="tel"
               aria-label="Phone number"
-              onFocus={() => setPhoneReady(true)}
-              onInput={() => setPhoneReady(true)}
               required
             />
           </div>
