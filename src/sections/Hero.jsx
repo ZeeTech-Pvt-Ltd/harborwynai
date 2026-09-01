@@ -9,9 +9,9 @@ export default function Hero() {
     <section className="hero" id="register">
       <div className="hero__glow hero__glow--1" aria-hidden="true" />
       <div className="hero__glow hero__glow--2" aria-hidden="true" />
-      <img className="coin coin--btc" src="/assets/img/coins/bitcoin-r-320.png" alt="" loading="lazy" />
-      <img className="coin coin--eth" src="/assets/img/coins/ethereum-f-320.png" alt="" loading="lazy" />
-      <img className="coin coin--sol" src="/assets/img/coins/solana-l-320.png" alt="" loading="lazy" />
+      <img className="coin coin--btc" src="/assets/img/coins/bitcoin-r-320.png" alt="" loading="lazy" decoding="async" fetchpriority="low" />
+      <img className="coin coin--eth" src="/assets/img/coins/ethereum-f-320.png" alt="" loading="lazy" decoding="async" fetchpriority="low" />
+      <img className="coin coin--sol" src="/assets/img/coins/solana-l-320.png" alt="" loading="lazy" decoding="async" fetchpriority="low" />
 
       <div className="container hero__inner" data-reveal>
         <div>

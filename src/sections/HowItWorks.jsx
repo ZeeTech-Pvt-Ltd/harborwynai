@@ -3,8 +3,8 @@ import { STEPS } from '../data/content'
 export default function HowItWorks() {
   return (
     <section className="steps-band has-coins" id="how-it-works">
-      <img className="coin coin--xrp" src="/assets/img/coins/xrp-l-320.png" alt="" loading="lazy" />
-      <img className="coin coin--tether-l" src="/assets/img/coins/tether-l-320.png" alt="" loading="lazy" />
+      <img className="coin coin--xrp" src="/assets/img/coins/xrp-l-320.png" alt="" loading="lazy" decoding="async" fetchpriority="low" />
+      <img className="coin coin--tether-l" src="/assets/img/coins/tether-l-320.png" alt="" loading="lazy" decoding="async" fetchpriority="low" />
       <div className="container">
         <div className="section-head" data-reveal>
           <h2>Three steps to your first trade</h2>

@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import intlTelInput from 'intl-tel-input/intlTelInputWithUtils'
 import 'intl-tel-input/styles'
 import { FORM_ENDPOINT, OFFER_NAME } from '../data/content'
 
@@ -28,25 +27,33 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
 
   useEffect(() => {
     if (!phoneInputRef.current) return
-    const iti = intlTelInput(phoneInputRef.current, {
-      initialCountry: '', // auto-detect via the lookup below
-      separateDialCode: true,
-      placeholderNumberPolicy: 'AGGRESSIVE', // country-specific example placeholder
-      placeholderNumberType: 'MOBILE',
-      initialCountryLookup: () =>
-        fetch('https://ipapi.co/json/')
-          .then((r) => r.json())
-          .then((d) => d.country_code || 'au')
-          .catch(() => 'au'),
+    let cancelled = false
+    let iti = null
+    // Code-split: intl-tel-input (with its utils) loads on demand so it
+    // stays out of the initial JS bundle.
+    import('intl-tel-input/intlTelInputWithUtils').then(({ default: intlTelInput }) => {
+      if (cancelled || !phoneInputRef.current) return
+      iti = intlTelInput(phoneInputRef.current, {
+        initialCountry: '', // auto-detect via the lookup below
+        separateDialCode: true,
+        placeholderNumberPolicy: 'AGGRESSIVE', // country-specific example placeholder
+        placeholderNumberType: 'MOBILE',
+        initialCountryLookup: () =>
+          fetch('https://ipapi.co/json/')
+            .then((r) => r.json())
+            .then((d) => d.country_code || 'au')
+            .catch(() => 'au'),
+      })
+      itiRef.current = iti
+      // Order the country selector as: flag → dial code → dropdown arrow.
+      const container = phoneInputRef.current.closest('.iti')
+      const arrow = container?.querySelector('.iti__arrow')
+      const selectedCountry = container?.querySelector('.iti__selected-country')
+      if (arrow && selectedCountry) selectedCountry.appendChild(arrow)
     })
-    itiRef.current = iti
-    // Order the country selector as: flag → dial code → dropdown arrow.
-    const container = phoneInputRef.current.closest('.iti')
-    const arrow = container?.querySelector('.iti__arrow')
-    const selectedCountry = container?.querySelector('.iti__selected-country')
-    if (arrow && selectedCountry) selectedCountry.appendChild(arrow)
     return () => {
-      iti.destroy()
+      cancelled = true
+      iti?.destroy()
       itiRef.current = null
     }
   }, [])
