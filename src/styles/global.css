@@ -445,7 +445,7 @@ input {
   box-shadow: 0 30px 70px rgba(2, 6, 24, 0.45);
 }
 
-.form-card h3 {
+.form-card h2 {
   font-size: clamp(20px, 2.2vw, 26px);
 }
 

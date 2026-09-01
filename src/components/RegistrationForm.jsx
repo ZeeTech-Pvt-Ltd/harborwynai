@@ -114,7 +114,7 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
 
   return (
     <div className="form-card" data-reveal>
-      {title && <h3>{title}</h3>}
+      {title && <h2>{title}</h2>}
       {subtitle && <p>{subtitle}</p>}
       <form onSubmit={handleSubmit}>
         {/* Honeypot — hidden from real users, bots fill it and get dropped */}
