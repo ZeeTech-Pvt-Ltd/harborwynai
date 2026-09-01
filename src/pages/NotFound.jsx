@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom'
 import useMeta from '../hooks/useMeta'
-import { BRAND } from '../data/content'
 
 export default function NotFound() {
   useMeta({
-    title: `Page Not Found — ${BRAND}`,
+    title: 'Page Not Found — Bright Kapitune',
     description: "The page you're looking for doesn't exist. Head back to the Bright Kapitune homepage.",
   })
 

@@ -3,7 +3,6 @@ import Icon from '../components/Icon'
 import useMeta from '../hooks/useMeta'
 import {
   ABOUT_FEATURES,
-  BRAND,
   STATS,
   STORY_STEPS,
   SITE_URL,
@@ -18,7 +17,7 @@ const HERO_STATS = [
 
 export default function AboutUs() {
   useMeta({
-    title: `About Us — ${BRAND}`,
+    title: 'About Bright Kapitune — AI-Powered Crypto Trading Platform',
     description:
       'About Bright Kapitune — our story, purpose, team and the transparency and controls behind the platform.',
     canonical: `${SITE_URL}/about-us`,

@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import FaqList from '../components/FaqList'
 import useMeta from '../hooks/useMeta'
-import { BRAND, FAQS_PAGE, FAQ_QUICK_CARDS, SITE_URL } from '../data/content'
+import { FAQS_PAGE, FAQ_QUICK_CARDS, SITE_URL } from '../data/content'
 
 export default function Faqs() {
   useMeta({
-    title: `FAQs — ${BRAND}`,
+    title: 'Bright Kapitune FAQs — Fees, Security & How It Works',
     canonical: `${SITE_URL}/faqs`,
     description:
       'Bright Kapitune frequently asked questions — how the platform works, security, withdrawals, fees, and more.',
