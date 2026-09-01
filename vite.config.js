@@ -7,4 +7,17 @@ export default defineConfig({
   server: {
     port: 5177, // 5173-5176 are occupied by other apps on this machine
   },
+  build: {
+    rollupOptions: {
+      output: {
+        // Split dependencies into a cached vendor chunk. intl-tel-input
+        // stays in its own lazy chunk (loaded on demand via import()).
+        manualChunks(id) {
+          if (id.includes('node_modules') && !id.includes('intl-tel-input')) {
+            return 'vendor'
+          }
+        },
+      },
+    },
+  },
 })
