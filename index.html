@@ -104,7 +104,46 @@
     </noscript>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static shell: paints the hero before JS loads (FCP/LCP), then
+           React mounts and replaces it with the full app. -->
+      <header class="site-header">
+        <div class="container site-header__inner">
+          <span class="logo" aria-label="Bright Kapitune home">
+            <span class="logo__mark">
+              <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true">
+                <circle cx="32" cy="32" r="17" fill="#9ae600"></circle>
+                <path d="M24 32.5l6 5.5 11-13" fill="none" stroke="#192e03" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+            Bright Kapitune
+          </span>
+          <div class="site-header__actions">
+            <a class="btn btn--lime" href="#register">Register</a>
+          </div>
+        </div>
+      </header>
+      <section class="hero" id="register">
+        <div class="container hero__inner">
+          <div>
+            <span class="hero__eyebrow">
+              <span class="dot" aria-hidden="true"></span>
+              Australia&apos;s home for crypto trading
+            </span>
+            <h1>Bright Kapitune <span class="accent">Platform</span></h1>
+            <p class="hero__sub">
+              A modern trading platform designed for Australians — bringing together crypto and
+              traditional markets with tools that make trading feel simple.
+            </p>
+            <div class="hero__points">
+              <span class="hero__point">Smart market analysis</span>
+              <span class="hero__point">Orders in an instant</span>
+              <span class="hero__point">Open 24/7</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
