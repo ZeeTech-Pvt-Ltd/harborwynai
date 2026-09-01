@@ -16,7 +16,7 @@ export default function Home() {
   useMeta({
     title: 'Bright Kapitune Platform — Crypto Trading for Australians',
     description:
-      'Bright Kapitune is an online trading platform for Australians — trade cryptocurrencies and traditional markets with smart analysis, fast execution and 24/7 access.',
+      "Bright Kapitune — Australia's online trading platform. Trade crypto, forex, equities and more with AI-powered analysis and 24/7 access.",
     canonical: `${SITE_URL}/`,
   })
   return (
