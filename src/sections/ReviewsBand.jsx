@@ -5,8 +5,8 @@ import { BAND_QUOTES, RATING } from '../data/content'
 export default function ReviewsBand() {
   return (
     <section className="band has-coins">
-      <img className="coin coin--usdt" src="/assets/img/coins/tether-r-320.png" alt="" loading="lazy" decoding="async" fetchpriority="low" />
-      <img className="coin coin--bnb" src="/assets/img/coins/bnb-l-320.png" alt="" loading="lazy" decoding="async" fetchpriority="low" />
+      <img className="coin coin--usdt" src="/assets/img/coins/tether-r-320.png" alt="" loading="lazy" decoding="async" fetchPriority="low" />
+      <img className="coin coin--bnb" src="/assets/img/coins/bnb-l-320.png" alt="" loading="lazy" decoding="async" fetchPriority="low" />
       <div className="container band__inner" data-reveal>
         <div>
           <h2>Trusted by a growing community</h2>
