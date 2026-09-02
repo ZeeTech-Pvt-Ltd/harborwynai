@@ -11,8 +11,22 @@ export default function Faqs() {
       'Bright Kapitune frequently asked questions — how the platform works, security, withdrawals, fees, and more.',
   })
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQS_PAGE.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  }
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero header, modeled on the reference site's "Here to Help" */}
       <section className="hero">
         <div className="hero__glow hero__glow--1" aria-hidden="true" />
@@ -26,11 +40,13 @@ export default function Faqs() {
               FAQs
             </span>
             <h1 style={{ fontSize: 'clamp(40px, 5.5vw, 68px)' }}>
-              Here to <span className="accent">Help</span>
+              Bright Kapitune <span className="accent">FAQs</span>
             </h1>
             <p className="hero__sub">
               Whether you are getting started, managing your portfolio or need help with your
-              account, we can answer common platform questions.
+              account, we can answer common platform questions. Bright Kapitune is built for
+              Australian traders — from first-time users exploring crypto to experienced investors
+              managing a diversified portfolio.
             </p>
 
             <div className="faqs-quick" data-reveal>

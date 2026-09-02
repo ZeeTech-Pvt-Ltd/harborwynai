@@ -16,7 +16,7 @@ export default function Contact() {
       <div className="container contact__inner">
         <div className="contact__intro">
           <span className="eyebrow eyebrow--light">Get in touch</span>
-          <h1>Contact Us</h1>
+          <h1>Contact Bright Kapitune</h1>
           <p className="contact__lede">
             We value communication and transparency. Whether you have questions about the
             platform, need technical assistance, or want to explore a collaboration — we&apos;re
@@ -25,7 +25,9 @@ export default function Contact() {
 
           <p className="contact__hint">
             Fill out the form with your details and our team will get back to you as quickly as
-            possible.
+            possible. The Bright Kapitune support team can help with account setup, deposits and
+            withdrawals, platform features, security settings and anything else you need to trade
+            with confidence.
           </p>
 
           <div className="contact__help">

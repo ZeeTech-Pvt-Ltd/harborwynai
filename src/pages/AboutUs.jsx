@@ -38,7 +38,7 @@ export default function AboutUs() {
               About us
             </span>
             <h1 style={{ fontSize: 'clamp(40px, 5.5vw, 68px)' }}>
-              Smart, automated <span className="accent">crypto trading</span>
+              Smart, automated crypto trading with <span className="accent">Bright Kapitune</span>
             </h1>
             <p className="hero__sub">
               Bright Kapitune supports market analysis, helping you assess opportunities, respond
@@ -159,6 +159,13 @@ export default function AboutUs() {
               development.
             </p>
           </div>
+
+          <p style={{ marginTop: 28, color: 'var(--ink-muted)', maxWidth: 90 + 'ch' }}>
+            Whatever your experience level, Bright Kapitune is designed to help Australians trade
+            with clarity. From your first crypto purchase to a diversified portfolio across forex,
+            shares and commodities, the platform brings analysis, execution and account controls
+            together in one place — so you can focus on the decisions that matter.
+          </p>
         </div>
       </section>
 

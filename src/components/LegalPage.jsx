@@ -15,7 +15,9 @@ export default function LegalPage({ title, description, updated, children }) {
 
   return (
     <main className="legal">
-      <h1>{title}</h1>
+      <h1>
+        {title} — {BRAND}
+      </h1>
       <p className="legal__updated">Last updated: {updated}</p>
       <div className="legal__body">{children}</div>
     </main>
