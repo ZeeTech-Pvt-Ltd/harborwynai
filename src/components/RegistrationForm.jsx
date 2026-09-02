@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import 'intl-tel-input/styles'
+import Icon from './Icon'
 import { FORM_ENDPOINT, OFFER_NAME } from '../data/content'
 
 const STATUS = { idle: 'idle', loading: 'loading', success: 'success', error: 'error' }
@@ -211,6 +212,10 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
         <button className="btn btn--lime btn--block" type="submit" disabled={status === STATUS.loading}>
           {status === STATUS.loading ? 'Submitting…' : 'Open an account'}
         </button>
+        <p className="form-trust">
+          <Icon name="lock" size={13} strokeWidth={2.2} />
+          Your data is protected with 256-bit SSL encryption
+        </p>
       </form>
     </div>
   )

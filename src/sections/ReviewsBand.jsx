@@ -11,8 +11,7 @@ export default function ReviewsBand() {
         <div>
           <h2>Trusted by a growing community</h2>
           <p>
-            Rated {RATING.score} out of 5 across {RATING.reviews} verified reviews, with new
-            members joining every day. Here is what Australian traders are saying.
+            New members join every day — here is what Australian traders are saying.
           </p>
           <div className="rating" style={{ marginTop: 24 }}>
             <span className="rating__stars" aria-hidden="true">

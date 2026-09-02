@@ -23,13 +23,13 @@ export default function Home() {
     <>
       <Hero />
       <Stats />
-      <ReviewsBand />
+      <HowItWorks />
       <About />
       <Benefits />
+      <ReviewsBand />
       <TrustUs />
-      <Security />
-      <HowItWorks />
       <Testimonials />
+      <Security />
       <Faq />
       <FinalCta />
     </>

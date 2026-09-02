@@ -186,10 +186,6 @@ export const BAND_QUOTES = [
     quote: 'Signed up on a Tuesday, made my first trade by Friday. Genuinely impressed.',
     author: 'Daniel K. — Sydney',
   },
-  {
-    quote: 'The most straightforward trading platform I have ever used.',
-    author: 'Amelia S. — Melbourne',
-  },
 ]
 
 export const FAQS = [
