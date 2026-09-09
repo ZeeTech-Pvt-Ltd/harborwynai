@@ -17,15 +17,15 @@ const HERO_STATS = [
 
 export default function AboutUs() {
   useMeta({
-    title: 'About Bright Kapitune — AI-Powered Crypto Trading Platform',
+    title: 'About Bright Kapitune - AI-Powered Crypto Trading Platform',
     description:
-      'About Bright Kapitune — our story, purpose, team and the transparency and controls behind the platform.',
+      'About Bright Kapitune - our story, purpose, team and the transparency and controls behind the platform.',
     canonical: `${SITE_URL}/about-us`,
   })
 
   return (
     <main>
-      {/* Hero — split: text left, frosted stats panel right */}
+      {/* Hero - split: text left, frosted stats panel right */}
       <section className="hero about-hero">
         <div className="hero__glow hero__glow--1" aria-hidden="true" />
         <span className="cta-final__ghost" aria-hidden="true">
@@ -65,7 +65,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Features — numbered hairline rows */}
+      {/* Features - numbered hairline rows */}
       <section className="section">
         <div className="container">
           <div className="section-head" data-reveal>
@@ -95,7 +95,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Platform overview — numeral row */}
+      {/* Platform overview - numeral row */}
       <section className="section section--tight">
         <div className="container">
           <div className="section-head" data-reveal>
@@ -113,7 +113,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Our story — slate band with lime numerals */}
+      {/* Our story - slate band with lime numerals */}
       <section className="steps-band about-story">
         <div className="container">
           <div className="section-head" data-reveal>
@@ -133,7 +133,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Our purpose — icon cards + long-term callout */}
+      {/* Our purpose - icon cards + long-term callout */}
       <section className="section">
         <div className="container">
           <div className="section-head" data-reveal>
@@ -164,7 +164,7 @@ export default function AboutUs() {
             Whatever your experience level, Bright Kapitune is designed to help Australians trade
             with clarity. From your first crypto purchase to a diversified portfolio across forex,
             shares and commodities, the platform brings analysis, execution and account controls
-            together in one place — so you can focus on the decisions that matter.
+            together in one place - so you can focus on the decisions that matter.
           </p>
         </div>
       </section>

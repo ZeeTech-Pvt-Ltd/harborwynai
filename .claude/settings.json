@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/samee/Desktop/Bright Kapitune/**)",
+      "Bash(npm run *)",
+      "Bash(cd /tmp)",
+      "Bash(node dash-check.js)"
+    ]
+  }
+}

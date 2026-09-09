@@ -29,7 +29,7 @@ export default function About() {
 
         <p style={{ marginTop: 28, textAlign: 'center', color: 'var(--ink-muted)', fontSize: 15 }}>
           Start with a minimum deposit of just{' '}
-          <strong style={{ color: 'var(--blue)' }}>347 A$</strong> — no experience required.
+          <strong style={{ color: 'var(--blue)' }}>347 A$</strong> - no experience required.
         </p>
       </div>
     </section>

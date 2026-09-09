@@ -1,7 +1,7 @@
 // Central content for the Bright Kapitune site.
 // All copy is original phrasing; brand facts (stats, rating, deposit
 // minimum) are kept as supplied. Testimonials and legal copy are
-// template text — review/replace before launch.
+// template text - review/replace before launch.
 
 export const BRAND = 'Bright Kapitune'
 
@@ -29,7 +29,7 @@ export const STATS = [
 ]
 
 // Partner logo wall renders public/assets/img/svg/partner-1..8.svg
-// (taken from the reference site — swap in real partner marks before launch).
+// (taken from the reference site - swap in real partner marks before launch).
 
 export const ABOUT_CARDS = [
   {
@@ -39,7 +39,7 @@ export const ABOUT_CARDS = [
   },
   {
     title: 'Fast Order Execution',
-    text: 'The moment you confirm a trade, your order goes through — no queues, no friction, no waiting around.',
+    text: 'The moment you confirm a trade, your order goes through - no queues, no friction, no waiting around.',
     icon: 'bolt',
   },
   {
@@ -62,7 +62,7 @@ export const BENEFITS = [
   },
   {
     title: 'Start Small',
-    text: 'Open an account and get going with a minimum deposit of just 347 A$ — perfect for testing the waters.',
+    text: 'Open an account and get going with a minimum deposit of just 347 A$ - perfect for testing the waters.',
     icon: 'coins',
   },
   {
@@ -72,7 +72,7 @@ export const BENEFITS = [
   },
   {
     title: 'Trade Around the Clock',
-    text: 'Markets move at all hours — and so can you, from any device, wherever you are.',
+    text: 'Markets move at all hours - and so can you, from any device, wherever you are.',
     icon: 'clock',
   },
   {
@@ -85,12 +85,12 @@ export const BENEFITS = [
 export const SECURITY_FEATURES = [
   {
     title: 'Bank-Grade Data Encryption',
-    text: 'Every connection to our servers is protected with 256-bit SSL encryption — the same standard the banks rely on.',
+    text: 'Every connection to our servers is protected with 256-bit SSL encryption - the same standard the banks rely on.',
     icon: 'lock',
   },
   {
     title: 'Offline Asset Storage',
-    text: 'The vast majority of funds — 98% — are held in cold storage, kept fully disconnected from the internet.',
+    text: 'The vast majority of funds - 98% - are held in cold storage, kept fully disconnected from the internet.',
     icon: 'vault',
   },
   {
@@ -105,7 +105,7 @@ export const SECURITY_FEATURES = [
   },
   {
     title: 'Unreadable Passwords',
-    text: 'Credentials are stored using one-way hashing — even our own staff can never see your password.',
+    text: 'Credentials are stored using one-way hashing - even our own staff can never see your password.',
     icon: 'fingerprint',
   },
   {
@@ -118,7 +118,7 @@ export const SECURITY_FEATURES = [
 export const STEPS = [
   {
     title: 'Sign Up',
-    text: 'Create your free account in minutes — just your name, email and phone number.',
+    text: 'Create your free account in minutes - just your name, email and phone number.',
   },
   {
     title: 'Deposit Funds',
@@ -126,7 +126,7 @@ export const STEPS = [
   },
   {
     title: 'Start Trading',
-    text: 'Trade BTC, SOL, USDT and more — manually or on autopilot.',
+    text: 'Trade BTC, SOL, USDT and more - manually or on autopilot.',
   },
 ]
 
@@ -145,7 +145,7 @@ export const TESTIMONIALS = [
     initials: 'OR',
     returnPct: '+15.6%',
     quote:
-      'The dashboard is genuinely easy to use — it feels more like online banking than trading software. Withdrawals have been quick and painless.',
+      'The dashboard is genuinely easy to use - it feels more like online banking than trading software. Withdrawals have been quick and painless.',
   },
   {
     name: 'Ethan W.',
@@ -184,7 +184,7 @@ export const TESTIMONIALS = [
 export const BAND_QUOTES = [
   {
     quote: 'Signed up on a Tuesday, made my first trade by Friday. Genuinely impressed.',
-    author: 'Daniel K. — Sydney',
+    author: 'Daniel K. - Sydney',
   },
 ]
 
@@ -195,7 +195,7 @@ export const FAQS = [
   },
   {
     q: 'How is my money protected?',
-    a: 'Several safeguards work together: 256-bit SSL encryption on every connection, 98% of funds held in offline cold storage, two-step login verification, and round-the-clock monitoring for unusual activity. Passwords are stored using one-way hashing, so nobody — including our staff — can ever read them.',
+    a: 'Several safeguards work together: 256-bit SSL encryption on every connection, 98% of funds held in offline cold storage, two-step login verification, and round-the-clock monitoring for unusual activity. Passwords are stored using one-way hashing, so nobody - including our staff - can ever read them.',
   },
   {
     q: 'How quickly can I withdraw my funds?',
@@ -203,7 +203,7 @@ export const FAQS = [
   },
   {
     q: 'Are there any hidden fees?',
-    a: 'No. Any cost attached to a transaction is shown to you clearly before you confirm it. If a fee applies, you will see the exact amount first — every single time.',
+    a: 'No. Any cost attached to a transaction is shown to you clearly before you confirm it. If a fee applies, you will see the exact amount first - every single time.',
   },
   {
     q: 'Do I need any experience to use the platform?',
@@ -220,12 +220,12 @@ export const RATING = {
   reviews: 189,
 }
 
-// Dedicated FAQs page — original phrasing, modeled on the reference
+// Dedicated FAQs page - original phrasing, modeled on the reference
 // site's /faq page (Here to Help + quick answers + 8-question list).
 export const FAQS_PAGE = [
   {
     q: 'What is Bright Kapitune and how does it work?',
-    a: 'Bright Kapitune is an AI-supported trading platform that runs continuously — scanning markets, spotting potential opportunities and placing trades automatically based on the settings you choose. You can use automated trade management or switch to manual mode whenever you like.',
+    a: 'Bright Kapitune is an AI-supported trading platform that runs continuously - scanning markets, spotting potential opportunities and placing trades automatically based on the settings you choose. You can use automated trade management or switch to manual mode whenever you like.',
   },
   {
     q: 'How does Bright Kapitune keep my funds and data secure?',
@@ -233,15 +233,15 @@ export const FAQS_PAGE = [
   },
   {
     q: 'Can I request a withdrawal at any time?',
-    a: 'Yes — you can request a withdrawal whenever you like, subject to account checks, available funds and your payment provider’s processing requirements. Your balance stays visible at all times, and processing times may vary by provider.',
+    a: 'Yes - you can request a withdrawal whenever you like, subject to account checks, available funds and your payment provider’s processing requirements. Your balance stays visible at all times, and processing times may vary by provider.',
   },
   {
     q: 'Are there any fees or costs?',
-    a: 'Any fee information is displayed clearly before you proceed. There is no registration fee, though other charges may apply depending on the service or payment method. To get started you’ll need a minimum deposit of 347 A$ — payment methods may include credit cards, bank transfers and PayPal.',
+    a: 'Any fee information is displayed clearly before you proceed. There is no registration fee, though other charges may apply depending on the service or payment method. To get started you’ll need a minimum deposit of 347 A$ - payment methods may include credit cards, bank transfers and PayPal.',
   },
   {
     q: 'Do I need experience to start?',
-    a: 'No. The platform is designed for newcomers and experienced traders alike. In automated mode, the AI handles market scanning, signal generation and trade execution based on your settings — or switch to manual mode whenever you want full control.',
+    a: 'No. The platform is designed for newcomers and experienced traders alike. In automated mode, the AI handles market scanning, signal generation and trade execution based on your settings - or switch to manual mode whenever you want full control.',
   },
   {
     q: 'Do I need to monitor the platform constantly?',
@@ -257,7 +257,7 @@ export const FAQS_PAGE = [
   },
 ]
 
-// About Us page — original phrasing, modeled on the reference /about page.
+// About Us page - original phrasing, modeled on the reference /about page.
 export const ABOUT_FEATURES = [
   {
     title: 'AI-supported market analysis',
@@ -329,10 +329,10 @@ export const FAQ_QUICK_CARDS = [
   },
   {
     title: 'Questions about your funds?',
-    text: 'Withdraw from your available balance whenever you like — any charges and transaction details are shown before you confirm.',
+    text: 'Withdraw from your available balance whenever you like - any charges and transaction details are shown before you confirm.',
   },
   {
     title: 'Unsure what to trade?',
-    text: 'Let the AI analyse selected markets — including Bitcoin, Ethereum, forex, shares and commodities — and flag opportunities for you.',
+    text: 'Let the AI analyse selected markets - including Bitcoin, Ethereum, forex, shares and commodities - and flag opportunities for you.',
   },
 ]

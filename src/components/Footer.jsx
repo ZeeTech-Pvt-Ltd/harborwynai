@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="site-footer__brand">
             <Logo />
             <p>
-              {BRAND} is an online trading platform for Australians — combining a broad range of
+              {BRAND} is an online trading platform for Australians - combining a broad range of
               markets with tools designed to make trading accessible to everyone.
             </p>
             <div className="site-footer__contact">

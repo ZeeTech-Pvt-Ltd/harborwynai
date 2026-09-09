@@ -25,7 +25,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero__sub">
-            A modern trading platform designed for Australians — bringing together crypto and
+            A modern trading platform designed for Australians - bringing together crypto and
             traditional markets with tools that make trading feel simple.
           </p>
 

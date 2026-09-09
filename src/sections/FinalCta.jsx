@@ -24,7 +24,7 @@ export default function FinalCta() {
           </h2>
           <p className="hero__sub">
             Join 4m+ members already trading with Bright Kapitune. Your free account takes minutes
-            to open — no experience needed.
+            to open - no experience needed.
           </p>
 
           <div className="hero__points cta-final__points">

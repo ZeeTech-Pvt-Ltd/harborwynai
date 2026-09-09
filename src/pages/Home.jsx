@@ -14,9 +14,9 @@ import FinalCta from '../sections/FinalCta'
 
 export default function Home() {
   useMeta({
-    title: 'Bright Kapitune — Official Crypto Trading Platform Australia',
+    title: 'Bright Kapitune - Official Crypto Trading Platform Australia',
     description:
-      "Bright Kapitune — Australia's online trading platform. Trade crypto, forex, equities and more with AI-powered analysis and 24/7 access.",
+      "Bright Kapitune - Australia's online trading platform. Trade crypto, forex, equities and more with AI-powered analysis and 24/7 access.",
     canonical: `${SITE_URL}/`,
   })
   return (

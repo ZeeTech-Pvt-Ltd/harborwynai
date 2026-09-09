@@ -5,10 +5,10 @@ import { FAQS_PAGE, FAQ_QUICK_CARDS, SITE_URL } from '../data/content'
 
 export default function Faqs() {
   useMeta({
-    title: 'Bright Kapitune FAQs — Fees, Security & How It Works',
+    title: 'Bright Kapitune FAQs - Fees, Security & How It Works',
     canonical: `${SITE_URL}/faqs`,
     description:
-      'Bright Kapitune frequently asked questions — how the platform works, security, withdrawals, fees, and more.',
+      'Bright Kapitune frequently asked questions - how the platform works, security, withdrawals, fees, and more.',
   })
 
   const faqSchema = {
@@ -45,7 +45,7 @@ export default function Faqs() {
             <p className="hero__sub">
               Whether you are getting started, managing your portfolio or need help with your
               account, we can answer common platform questions. Bright Kapitune is built for
-              Australian traders — from first-time users exploring crypto to experienced investors
+              Australian traders - from first-time users exploring crypto to experienced investors
               managing a diversified portfolio.
             </p>
 

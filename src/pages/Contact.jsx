@@ -5,10 +5,10 @@ import { CONTACT_EMAIL, SITE_URL } from '../data/content'
 
 export default function Contact() {
   useMeta({
-    title: 'Contact Bright Kapitune — Get Support & Assistance',
+    title: 'Contact Bright Kapitune - Get Support & Assistance',
     canonical: `${SITE_URL}/contact-us`,
     description:
-      'Contact Bright Kapitune — questions about the platform, technical assistance or collaborations. Our team is ready to help.',
+      'Contact Bright Kapitune - questions about the platform, technical assistance or collaborations. Our team is ready to help.',
   })
 
   return (
@@ -19,7 +19,7 @@ export default function Contact() {
           <h1>Contact Bright Kapitune</h1>
           <p className="contact__lede">
             We value communication and transparency. Whether you have questions about the
-            platform, need technical assistance, or want to explore a collaboration — we&apos;re
+            platform, need technical assistance, or want to explore a collaboration - we&apos;re
             here to help.
           </p>
 

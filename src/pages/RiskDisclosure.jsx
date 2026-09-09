@@ -4,13 +4,13 @@ export default function RiskDisclosure() {
   return (
     <LegalPage
       title="Risk Disclosure"
-      description="Bright Kapitune Risk Disclosure — trading financial markets carries substantial risk and is not suitable for every investor."
+      description="Bright Kapitune Risk Disclosure - trading financial markets carries substantial risk and is not suitable for every investor."
       updated="1 August 2026"
     >
       <LegalSection heading="General Risk Warning">
         <p>
-          Trading in financial markets — including cryptocurrencies, equities, forex, commodities,
-          precious metals and CFDs — carries substantial risk and is not appropriate for every
+          Trading in financial markets - including cryptocurrencies, equities, forex, commodities,
+          precious metals and CFDs - carries substantial risk and is not appropriate for every
           investor. You may lose some or all of the capital you put in. You should never trade with
           money you cannot afford to lose.
         </p>

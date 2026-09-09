@@ -5,7 +5,7 @@ import { SITE_URL } from '../data/content'
 
 export default function ThankYou() {
   useMeta({
-    title: 'Thank You for Registering — Bright Kapitune',
+    title: 'Thank You for Registering - Bright Kapitune',
     canonical: `${SITE_URL}/thank-you`,
     description: 'Thank you for registering with Bright Kapitune. Our team will contact you shortly.',
   })

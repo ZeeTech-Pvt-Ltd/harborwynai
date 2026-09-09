@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
   return (
     <LegalPage
       title="Privacy Policy"
-      description="Read the Bright Kapitune Privacy Policy — how we collect, use and protect your personal information."
+      description="Read the Bright Kapitune Privacy Policy - how we collect, use and protect your personal information."
       updated="1 August 2026"
     >
       <LegalSection heading="1. Who We Are">

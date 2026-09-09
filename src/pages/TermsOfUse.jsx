@@ -4,7 +4,7 @@ export default function TermsOfUse() {
   return (
     <LegalPage
       title="Terms of Use"
-      description="Bright Kapitune Terms of Use — the rules that govern your use of our website and trading platform."
+      description="Bright Kapitune Terms of Use - the rules that govern your use of our website and trading platform."
       updated="1 August 2026"
     >
       <LegalSection heading="1. Acceptance of Terms">

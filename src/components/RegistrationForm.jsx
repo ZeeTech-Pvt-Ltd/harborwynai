@@ -119,7 +119,7 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
       {title && <h2>{title}</h2>}
       {subtitle && <p>{subtitle}</p>}
       <form onSubmit={handleSubmit}>
-        {/* Honeypot — hidden from real users, bots fill it and get dropped */}
+        {/* Honeypot - hidden from real users, bots fill it and get dropped */}
         <input
           ref={honeypotRef}
           className="visually-hidden"
