@@ -1,0 +1,17 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Harborwyn AI",
+    "identifier": "harborwynai.io"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:harborwynai.io:web:site",
+      "displayName": "Harborwyn AI",
+      "type": "text/html",
+      "url": "https://harborwynai.io/",
+      "description": "Landing site for Harborwyn AI, an AI-assisted crypto trading platform. Trade Bitcoin, Ethereum, Solana and more from $250, with automated or manual execution through partnered, regulated brokers.",
+      "tags": ["trading", "crypto", "finance", "platform", "ai"]
+    }
+  ]
+}
