@@ -3,7 +3,7 @@ import { ABOUT_CARDS } from '../data/content'
 
 export default function About() {
   return (
-    <section className="section" id="about">
+    <section className="section" id="about" style={{ paddingBottom: 'clamp(24px, 4vw, 48px)' }}>
       <div className="container">
         <div className="section-head" data-reveal>
           <span className="eyebrow">About the platform</span>
