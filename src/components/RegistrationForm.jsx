@@ -51,11 +51,6 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
           placeholderNumberType: 'MOBILE',
         })
         itiRef.current = iti
-        // Order the country selector as: flag → dial code → dropdown arrow.
-        const container = phoneInputRef.current.closest('.iti')
-        const arrow = container?.querySelector('.iti__arrow')
-        const selectedCountry = container?.querySelector('.iti__selected-country')
-        if (arrow && selectedCountry) selectedCountry.appendChild(arrow)
 
         // Detect the visitor's country from their IP and update the field;
         // on any failure the UK default stays in place. ipwho.is is primary

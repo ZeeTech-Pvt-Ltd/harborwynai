@@ -1843,11 +1843,29 @@ html.js .about-hero__panel[data-reveal] {
   border-radius: 12px 0 0 12px;
 }
 
-/* flag → dial code → dropdown arrow, in one row */
+/* flag → dial code → dropdown arrow, in one row. v29 renders the arrow
+   inside the primary row (flag → arrow) and the dial code beside it, so
+   the arrow is pinned to the right edge in CSS - moving DOM nodes would
+   trigger the plugin's width measurement and force a reflow. */
 .phone-iti .iti__selected-country {
   display: flex;
   align-items: center;
   gap: 6px;
+  position: relative;
+  padding-right: 18px;
+}
+
+.phone-iti .iti__selected-dial-code {
+  /* Stable width so a dial-code swap (IP lookup) does not resize the
+     measured element and retrigger the plugin's read-after-write. */
+  min-width: 32px;
+}
+
+.phone-iti .iti__arrow {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .phone-iti .iti__selected-dial-code {
