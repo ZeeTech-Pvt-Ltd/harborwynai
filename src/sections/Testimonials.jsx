@@ -12,28 +12,37 @@ export default function Testimonials() {
   const [perView, setPerView] = useState(1)
   const [paused, setPaused] = useState(false)
 
-  // Cards-per-view depends on the viewport breakpoints, so measure it
-  // and keep the page count in sync on resize. The first measurement is
-  // deferred to the next frame so the geometry read does not force a
-  // reflow in the middle of hydration.
+  // Cards-per-view depends on the viewport breakpoints. All sizes come
+  // from ResizeObserver entries - the browser reports measurements from
+  // layout it has already performed, so no geometry is read after a DOM
+  // write (which would force a reflow).
+  const cardWidthRef = useRef(null)
+  const trackWidthRef = useRef(null)
+
   useEffect(() => {
     const track = trackRef.current
     if (!track) return
-    const update = () => {
-      const card = track.querySelector('.testimonial')
-      if (!card) return
-      const step = card.getBoundingClientRect().width + GAP
-      const visible = Math.max(1, Math.round(track.clientWidth / step))
+    const card = track.querySelector('.testimonial')
+    if (!card) return
+    const recompute = () => {
+      const cardWidth = cardWidthRef.current
+      const trackWidth = trackWidthRef.current
+      if (!cardWidth || !trackWidth) return
+      const step = cardWidth + GAP
+      const visible = Math.max(1, Math.round(trackWidth / step))
       setPerView(visible)
       setPages(Math.ceil(TESTIMONIALS.length / visible))
     }
-    const raf = requestAnimationFrame(update)
-    const ro = new ResizeObserver(update)
+    const ro = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.target === track) trackWidthRef.current = entry.contentRect.width
+        else cardWidthRef.current = entry.contentRect.width
+      }
+      recompute()
+    })
     ro.observe(track)
-    return () => {
-      cancelAnimationFrame(raf)
-      ro.disconnect()
-    }
+    ro.observe(card)
+    return () => ro.disconnect()
   }, [])
 
   // Keep the active dot in sync with manual swipes/scrolls.
@@ -41,9 +50,9 @@ export default function Testimonials() {
     const track = trackRef.current
     if (!track) return
     const onScroll = () => {
-      const card = track.querySelector('.testimonial')
-      if (!card) return
-      const step = card.getBoundingClientRect().width + GAP
+      const cardWidth = cardWidthRef.current
+      if (!cardWidth) return
+      const step = cardWidth + GAP
       const i = Math.round(track.scrollLeft / (step * perView))
       setPage(Math.min(Math.max(0, i), pages - 1))
     }
@@ -57,9 +66,9 @@ export default function Testimonials() {
     const id = setInterval(() => {
       const track = trackRef.current
       if (!track) return
-      const card = track.querySelector('.testimonial')
-      if (!card) return
-      const step = card.getBoundingClientRect().width + GAP
+      const cardWidth = cardWidthRef.current
+      if (!cardWidth) return
+      const step = cardWidth + GAP
       const maxScroll = track.scrollWidth - track.clientWidth
       const atEnd = track.scrollLeft >= maxScroll - 4
       const next = atEnd ? 0 : Math.min(track.scrollLeft + step * perView, maxScroll)
@@ -71,9 +80,9 @@ export default function Testimonials() {
   const goTo = (index) => {
     const track = trackRef.current
     if (!track) return
-    const card = track.querySelector('.testimonial')
-    if (!card) return
-    const step = card.getBoundingClientRect().width + GAP
+    const cardWidth = cardWidthRef.current
+    if (!cardWidth) return
+    const step = cardWidth + GAP
     const maxScroll = track.scrollWidth - track.clientWidth
     const target = Math.min(Math.max(0, index), pages - 1)
     const left = target === pages - 1 ? maxScroll : target * step * perView
