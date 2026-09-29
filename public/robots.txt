@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bright-kapitune-au.com/sitemap.xml
+Sitemap: https://harborwynai.io/sitemap.xml

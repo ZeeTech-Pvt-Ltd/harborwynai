@@ -7,11 +7,11 @@ export default function About() {
       <div className="container">
         <div className="section-head" data-reveal>
           <span className="eyebrow">About the platform</span>
-          <h2>Meet the Bright Kapitune platform</h2>
+          <h2>Meet the Harborwyn AI platform</h2>
           <p>
-            Bright Kapitune is an online trading platform created for Australian users. It brings
-            a broad range of markets together in one place, with tools that do the heavy lifting
-            so you can focus on the decisions that matter.
+            Harborwyn AI is an online trading platform built for traders worldwide. It brings a
+            broad range of markets together in one place, with tools that do the heavy lifting so
+            you can focus on the decisions that matter.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export default function About() {
 
         <p style={{ marginTop: 28, textAlign: 'center', color: 'var(--ink-muted)', fontSize: 15 }}>
           Start with a minimum deposit of just{' '}
-          <strong style={{ color: 'var(--blue)' }}>347 A$</strong> - no experience required.
+          <strong style={{ color: 'var(--blue)' }}>$250</strong> - no experience required.
         </p>
       </div>
     </section>

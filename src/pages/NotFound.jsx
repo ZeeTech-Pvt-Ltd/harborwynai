@@ -3,8 +3,8 @@ import useMeta from '../hooks/useMeta'
 
 export default function NotFound() {
   useMeta({
-    title: 'Page Not Found - Bright Kapitune',
-    description: "The page you're looking for doesn't exist. Head back to the Bright Kapitune homepage.",
+    title: 'Page Not Found - Harborwyn AI',
+    description: "The page you're looking for doesn't exist. Head back to the Harborwyn AI homepage.",
   })
 
   return (

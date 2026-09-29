@@ -7,7 +7,7 @@ export default function Benefits() {
       <div className="container">
         <div className="section-head" data-reveal>
           <span className="eyebrow">Why trade</span>
-          <h2>Why traders choose Bright Kapitune</h2>
+          <h2>Why traders choose Harborwyn AI</h2>
           <p>
             Every part of the experience is designed to remove the hurdles that keep people out
             of the markets.

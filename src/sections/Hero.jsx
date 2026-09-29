@@ -17,16 +17,16 @@ export default function Hero() {
         <div>
           <span className="hero__eyebrow">
             <span className="dot" aria-hidden="true" />
-            Australia&apos;s home for crypto trading
+            Your AI-assisted trading partner
           </span>
 
           <h1>
-            Bright Kapitune <span className="accent">Platform</span>
+            Harborwyn AI <span className="accent">Platform</span>
           </h1>
 
           <p className="hero__sub">
-            A modern trading platform designed for Australians - bringing together crypto and
-            traditional markets with tools that make trading feel simple.
+            A modern AI-assisted trading platform - bringing together crypto and traditional
+            markets with tools that make trading feel simple.
           </p>
 
           <div className="hero__points">

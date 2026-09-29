@@ -1,16 +1,16 @@
-// Central content for the Bright Kapitune site.
+// Central content for the Harborwyn AI site.
 // All copy is original phrasing; brand facts (stats, rating, deposit
 // minimum) are kept as supplied. Testimonials and legal copy are
 // template text - review/replace before launch.
 
-export const BRAND = 'Bright Kapitune'
+export const BRAND = 'Harborwyn AI'
 
-export const SITE_URL = 'https://bright-kapitune-au.com'
+export const SITE_URL = 'https://harborwynai.io'
 
-export const CONTACT_EMAIL = 'support@bright-kapitune-au.com'
+export const CONTACT_EMAIL = 'support@harborwynai.io'
 
 export const FORM_ENDPOINT = 'https://meridianc-au.com/homeMailAction.php'
-export const OFFER_NAME = 'BrightKapitune-Site'
+export const OFFER_NAME = 'HarborwynAI-Site'
 
 // Header menu. `to` renders a router link, `href` a home-page anchor.
 export const NAV_LINKS = [
@@ -57,12 +57,12 @@ export const BENEFITS = [
   },
   {
     title: 'Committed to Compliance',
-    text: 'Bright Kapitune is operated with a strong focus on meeting the regulatory standards expected by Australian users.',
+    text: 'Harborwyn AI is operated with a strong focus on regulatory standards, and every trade is executed through partnered, regulated brokers.',
     icon: 'shield',
   },
   {
     title: 'Start Small',
-    text: 'Open an account and get going with a minimum deposit of just 347 A$ - perfect for testing the waters.',
+    text: 'Open an account and get going with a minimum deposit of just $250 - perfect for testing the waters.',
     icon: 'coins',
   },
   {
@@ -76,8 +76,8 @@ export const BENEFITS = [
     icon: 'clock',
   },
   {
-    title: 'Support Close to Home',
-    text: 'A friendly, Australia-based support team is ready to help whenever you have a question.',
+    title: 'Help Whenever You Need It',
+    text: 'A friendly, 24/7 support team is ready to help whenever you have a question.',
     icon: 'headset',
   },
 ]
@@ -122,18 +122,18 @@ export const STEPS = [
   },
   {
     title: 'Deposit Funds',
-    text: 'Top up with 347 A$ or more using a card, bank transfer or e-wallet.',
+    text: 'Top up with $250 or more using a card, bank transfer or e-wallet.',
   },
   {
     title: 'Start Trading',
-    text: 'Trade BTC, SOL, USDT and more - manually or on autopilot.',
+    text: 'Trade BTC, ETH, SOL, BNB, USDT and more - manually or on autopilot.',
   },
 ]
 
 export const TESTIMONIALS = [
   {
     name: 'James C.',
-    location: 'Sydney',
+    location: 'London, UK',
     initials: 'JC',
     returnPct: '+18.2%',
     quote:
@@ -141,7 +141,7 @@ export const TESTIMONIALS = [
   },
   {
     name: 'Olivia R.',
-    location: 'Melbourne',
+    location: 'Toronto, Canada',
     initials: 'OR',
     returnPct: '+15.6%',
     quote:
@@ -149,7 +149,7 @@ export const TESTIMONIALS = [
   },
   {
     name: 'Ethan W.',
-    location: 'Brisbane',
+    location: 'New York, USA',
     initials: 'EW',
     returnPct: '+19.1%',
     quote:
@@ -157,15 +157,15 @@ export const TESTIMONIALS = [
   },
   {
     name: 'Sophie T.',
-    location: 'Perth',
+    location: 'Berlin, Germany',
     initials: 'ST',
     returnPct: '+14.3%',
     quote:
-      'What sold me was the transparency. Every fee is shown upfront, and the local support team actually answers the phone.',
+      'What sold me was the transparency. Every fee is shown upfront, and the 24/7 support team actually answers the phone.',
   },
   {
     name: 'Liam B.',
-    location: 'Adelaide',
+    location: 'Dubai, UAE',
     initials: 'LB',
     returnPct: '+16.8%',
     quote:
@@ -173,7 +173,7 @@ export const TESTIMONIALS = [
   },
   {
     name: 'Charlotte M.',
-    location: 'Gold Coast',
+    location: 'Singapore',
     initials: 'CM',
     returnPct: '+17.4%',
     quote:
@@ -184,13 +184,13 @@ export const TESTIMONIALS = [
 export const BAND_QUOTES = [
   {
     quote: 'Signed up on a Tuesday, made my first trade by Friday. Genuinely impressed.',
-    author: 'Daniel K. - Sydney',
+    author: 'Daniel K. - London',
   },
 ]
 
 export const FAQS = [
   {
-    q: 'How do I get started with Bright Kapitune?',
+    q: 'How do I get started with Harborwyn AI?',
     a: 'Open a free account, add funds, and you can begin right away. Trade on your own terms, or switch on the built-in analysis engine that scans the markets and acts on the settings you choose. Your money and your settings stay under your control at all times.',
   },
   {
@@ -207,7 +207,7 @@ export const FAQS = [
   },
   {
     q: 'Do I need any experience to use the platform?',
-    a: 'None at all. The interface was designed for first-timers, the minimum deposit is just 347 A$, and the analysis engine plus built-in guides help you build confidence step by step.',
+    a: 'None at all. The interface was designed for first-timers, the minimum deposit is just $250, and the analysis engine plus built-in guides help you build confidence step by step.',
   },
   {
     q: 'Which markets can I access?',
@@ -224,11 +224,11 @@ export const RATING = {
 // site's /faq page (Here to Help + quick answers + 8-question list).
 export const FAQS_PAGE = [
   {
-    q: 'What is Bright Kapitune and how does it work?',
-    a: 'Bright Kapitune is an AI-supported trading platform that runs continuously - scanning markets, spotting potential opportunities and placing trades automatically based on the settings you choose. You can use automated trade management or switch to manual mode whenever you like.',
+    q: 'What is Harborwyn AI and how does it work?',
+    a: 'Harborwyn AI is an AI-supported trading platform that runs continuously - scanning markets, spotting potential opportunities and placing trades automatically through partnered, regulated brokers, based on the settings you choose. You can use automated trade management or switch to manual mode whenever you like.',
   },
   {
-    q: 'How does Bright Kapitune keep my funds and data secure?',
+    q: 'How does Harborwyn AI keep my funds and data secure?',
     a: 'Security is built into every layer of the platform. Your personal data is protected with recognised encryption and account authentication, and financial transactions go through established payment providers. Your trades, signals and balance updates are shown clearly so you can always see what is happening on your account.',
   },
   {
@@ -237,7 +237,7 @@ export const FAQS_PAGE = [
   },
   {
     q: 'Are there any fees or costs?',
-    a: 'Any fee information is displayed clearly before you proceed. There is no registration fee, though other charges may apply depending on the service or payment method. To get started you’ll need a minimum deposit of 347 A$ - payment methods may include credit cards, bank transfers and PayPal.',
+    a: 'Any fee information is displayed clearly before you proceed. There is no registration fee and no platform commission, though broker spreads and other charges may apply depending on the service or payment method. To get started you’ll need a minimum deposit of $250 - payment methods may include credit cards, bank transfers and PayPal.',
   },
   {
     q: 'Do I need experience to start?',
@@ -245,15 +245,15 @@ export const FAQS_PAGE = [
   },
   {
     q: 'Do I need to monitor the platform constantly?',
-    a: 'No. Bright Kapitune can continuously analyse live charts, trends and patterns, reducing the need for constant monitoring. The automated system manages activity based on your chosen settings, though it’s still wise to review your account regularly.',
+    a: 'No. Harborwyn AI can continuously analyse live charts, trends and patterns, reducing the need for constant monitoring. The automated system manages activity based on your chosen settings, though it’s still wise to review your account regularly.',
   },
   {
     q: 'What can I trade?',
-    a: 'Bright Kapitune gives you access to a range of markets, which may include cryptocurrencies such as Bitcoin and Ethereum, forex, shares, commodities, precious metals and CFDs.',
+    a: 'Harborwyn AI gives you access to a range of markets through partnered brokers, which may include cryptocurrencies such as Bitcoin, Ethereum, Solana, BNB and USDT, as well as forex, shares, commodities, precious metals and CFDs.',
   },
   {
     q: 'How do I contact support?',
-    a: 'You can reach our support team any time from the Contact Us page, or email us directly at support@bright-kapitune-au.com. We’re happy to help with questions about your account, deposits, withdrawals or the platform itself.',
+    a: 'You can reach our support team any time from the Contact Us page, or email us directly at support@harborwynai.io. We’re happy to help with questions about your account, deposits, withdrawals or the platform itself.',
   },
 ]
 

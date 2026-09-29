@@ -5,10 +5,10 @@ import { FAQS_PAGE, FAQ_QUICK_CARDS, SITE_URL } from '../data/content'
 
 export default function Faqs() {
   useMeta({
-    title: 'Bright Kapitune FAQs - Fees, Security & How It Works',
+    title: 'Harborwyn AI FAQs - Fees, Security & How It Works',
     canonical: `${SITE_URL}/faqs`,
     description:
-      'Bright Kapitune frequently asked questions - how the platform works, security, withdrawals, fees, and more.',
+      'Harborwyn AI frequently asked questions - how the platform works, security, withdrawals, fees, and more.',
   })
 
   const faqSchema = {
@@ -40,13 +40,13 @@ export default function Faqs() {
               FAQs
             </span>
             <h1 style={{ fontSize: 'clamp(40px, 5.5vw, 68px)' }}>
-              Bright Kapitune <span className="accent">FAQs</span>
+              Harborwyn AI <span className="accent">FAQs</span>
             </h1>
             <p className="hero__sub">
               Whether you are getting started, managing your portfolio or need help with your
-              account, we can answer common platform questions. Bright Kapitune is built for
-              Australian traders - from first-time users exploring crypto to experienced investors
-              managing a diversified portfolio.
+              account, we can answer common platform questions. Harborwyn AI is built for traders
+              worldwide - from first-time users exploring crypto to experienced investors managing
+              a diversified portfolio.
             </p>
 
             <div className="faqs-quick" data-reveal>
@@ -67,7 +67,7 @@ export default function Faqs() {
           <div className="section-head" data-reveal>
             <span className="eyebrow">FAQ</span>
             <h2>Frequently asked questions</h2>
-            <p>Everything you need to know about trading with Bright Kapitune.</p>
+            <p>Everything you need to know about trading with Harborwyn AI.</p>
           </div>
 
           <FaqList items={FAQS_PAGE} />

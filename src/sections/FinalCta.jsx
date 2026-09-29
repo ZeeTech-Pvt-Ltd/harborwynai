@@ -23,7 +23,7 @@ export default function FinalCta() {
             Ready to start your <span className="accent">trading journey?</span>
           </h2>
           <p className="hero__sub">
-            Join 4m+ members already trading with Bright Kapitune. Your free account takes minutes
+            Join 4m+ members already trading with Harborwyn AI. Your free account takes minutes
             to open - no experience needed.
           </p>
 

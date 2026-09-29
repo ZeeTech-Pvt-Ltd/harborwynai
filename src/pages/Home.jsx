@@ -14,9 +14,9 @@ import FinalCta from '../sections/FinalCta'
 
 export default function Home() {
   useMeta({
-    title: 'Bright Kapitune - Official Crypto Trading Platform Australia',
+    title: 'Harborwyn AI - Official AI Crypto Trading Platform',
     description:
-      "Bright Kapitune - Australia's online trading platform. Trade crypto, forex, equities and more with AI-powered analysis and 24/7 access.",
+      'Harborwyn AI - the AI-assisted crypto trading platform. Trade Bitcoin, Ethereum, Solana and more from $250, with automated or manual execution.',
     canonical: `${SITE_URL}/`,
   })
   return (

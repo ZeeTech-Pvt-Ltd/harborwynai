@@ -4,7 +4,7 @@ export default function RiskDisclosure() {
   return (
     <LegalPage
       title="Risk Disclosure"
-      description="Bright Kapitune Risk Disclosure - trading financial markets carries substantial risk and is not suitable for every investor."
+      description="Harborwyn AI Risk Disclosure - trading financial markets carries substantial risk and is not suitable for every investor."
       updated="1 August 2026"
     >
       <LegalSection heading="General Risk Warning">
