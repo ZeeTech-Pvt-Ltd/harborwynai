@@ -31,49 +31,78 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
   // flag + country code still appear as soon as the page renders.
   // The field starts on the UK (flag + dial code show immediately), then
   // switches to the user's country once the IP lookup resolves.
+  // The plugin is initialized only when the form is near the viewport, so
+  // the below-fold form (final CTA) does no layout or script work during
+  // the initial page load.
   useEffect(() => {
     if (!phoneInputRef.current) return
     let cancelled = false
     let iti = null
-    import('intl-tel-input/intlTelInputWithUtils').then(({ default: intlTelInput }) => {
-      if (cancelled || !phoneInputRef.current) return
-      iti = intlTelInput(phoneInputRef.current, {
-        initialCountry: 'gb',
-        separateDialCode: true,
-        placeholderNumberPolicy: 'AGGRESSIVE', // country-specific example placeholder
-        placeholderNumberType: 'MOBILE',
-      })
-      itiRef.current = iti
-      // Order the country selector as: flag → dial code → dropdown arrow.
-      const container = phoneInputRef.current.closest('.iti')
-      const arrow = container?.querySelector('.iti__arrow')
-      const selectedCountry = container?.querySelector('.iti__selected-country')
-      if (arrow && selectedCountry) selectedCountry.appendChild(arrow)
+    let observer = null
 
-      // Detect the visitor's country from their IP and update the field;
-      // on any failure the UK default stays in place. ipwho.is is primary
-      // (CORS-friendly, no key); ipapi.co is the fallback.
-      const lookups = [
-        fetch('https://ipwho.is/')
-          .then((r) => r.json())
-          .then((d) => (d.success === false ? null : d.country_code)),
-        fetch('https://ipapi.co/json/')
-          .then((r) => r.json())
-          .then((d) => d.country_code),
-      ]
-      Promise.any(lookups)
-        .then((country) => {
-          const iso2 = typeof country === 'string' ? country.toLowerCase() : ''
-          if (!cancelled && iso2 && iso2 !== 'gb') {
-            iti.setSelectedCountry(iso2)
+    const initPhone = () => {
+      if (cancelled || iti) return
+      import('intl-tel-input/intlTelInputWithUtils').then(({ default: intlTelInput }) => {
+        if (cancelled || !phoneInputRef.current) return
+        iti = intlTelInput(phoneInputRef.current, {
+          initialCountry: 'gb',
+          separateDialCode: true,
+          placeholderNumberPolicy: 'AGGRESSIVE', // country-specific example placeholder
+          placeholderNumberType: 'MOBILE',
+        })
+        itiRef.current = iti
+        // Order the country selector as: flag → dial code → dropdown arrow.
+        const container = phoneInputRef.current.closest('.iti')
+        const arrow = container?.querySelector('.iti__arrow')
+        const selectedCountry = container?.querySelector('.iti__selected-country')
+        if (arrow && selectedCountry) selectedCountry.appendChild(arrow)
+
+        // Detect the visitor's country from their IP and update the field;
+        // on any failure the UK default stays in place. ipwho.is is primary
+        // (CORS-friendly, no key); ipapi.co is the fallback.
+        const lookups = [
+          fetch('https://ipwho.is/')
+            .then((r) => r.json())
+            .then((d) => (d.success === false ? null : d.country_code)),
+          fetch('https://ipapi.co/json/')
+            .then((r) => r.json())
+            .then((d) => d.country_code),
+        ]
+        Promise.any(lookups)
+          .then((country) => {
+            const iso2 = typeof country === 'string' ? country.toLowerCase() : ''
+            if (!cancelled && iso2 && iso2 !== 'gb') {
+              iti.setSelectedCountry(iso2)
+            }
+          })
+          .catch(() => {
+            // Lookup unavailable - keep the UK default.
+          })
+      })
+    }
+
+    // Init immediately when the form is (nearly) visible; the observer
+    // callback fires on the next frame for above-the-fold forms, which
+    // avoids reading geometry during hydration.
+    const formCard = phoneInputRef.current.closest('.form-card')
+    if (!formCard || !('IntersectionObserver' in window)) {
+      initPhone()
+    } else {
+      observer = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((e) => e.isIntersecting)) {
+            observer.disconnect()
+            initPhone()
           }
-        })
-        .catch(() => {
-          // Lookup unavailable - keep the UK default.
-        })
-    })
+        },
+        { rootMargin: '600px 0px' }
+      )
+      observer.observe(formCard)
+    }
+
     return () => {
       cancelled = true
+      observer?.disconnect()
       iti?.destroy()
       itiRef.current = null
     }

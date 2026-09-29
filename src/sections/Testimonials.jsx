@@ -13,7 +13,9 @@ export default function Testimonials() {
   const [paused, setPaused] = useState(false)
 
   // Cards-per-view depends on the viewport breakpoints, so measure it
-  // and keep the page count in sync on resize.
+  // and keep the page count in sync on resize. The first measurement is
+  // deferred to the next frame so the geometry read does not force a
+  // reflow in the middle of hydration.
   useEffect(() => {
     const track = trackRef.current
     if (!track) return
@@ -25,10 +27,13 @@ export default function Testimonials() {
       setPerView(visible)
       setPages(Math.ceil(TESTIMONIALS.length / visible))
     }
-    update()
+    const raf = requestAnimationFrame(update)
     const ro = new ResizeObserver(update)
     ro.observe(track)
-    return () => ro.disconnect()
+    return () => {
+      cancelAnimationFrame(raf)
+      ro.disconnect()
+    }
   }, [])
 
   // Keep the active dot in sync with manual swipes/scrolls.
