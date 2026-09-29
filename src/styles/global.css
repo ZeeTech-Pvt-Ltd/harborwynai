@@ -1551,9 +1551,9 @@ input {
 /* ---------- Final CTA (split, mirrors hero) ---------- */
 
 .cta-final {
-  /* Boxed card centered at container width on the light page surface -
+  /* Boxed card with left-right margins on the light page surface -
      visually distinct from the solid navy footer that follows it. */
-  max-width: var(--container);
+  width: min(100% - 2 * clamp(16px, 8vw, 40px), calc(var(--container) - clamp(40px, 8vw, 160px)));
   margin: 0 auto clamp(32px, 5vw, 64px);
   border-radius: 32px;
   background: linear-gradient(135deg, var(--slate) 0%, var(--blue-dark) 100%);
