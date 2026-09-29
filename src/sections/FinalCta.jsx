@@ -1,17 +1,14 @@
+import { Link } from 'react-router-dom'
 import Icon from '../components/Icon'
-import RegistrationForm from '../components/RegistrationForm'
 
 const POINTS = ['Free account in minutes', 'No experience needed']
 
-// Closing conversion section on the slate background, above the footer.
-// Mirrors the hero's split layout for a bookend feel.
+// Closing conversion section, styled as a floating gradient card above
+// the solid navy footer - CTA-only, points to the registration form in
+// the hero.
 export default function FinalCta() {
   return (
-    <section
-      className="hero cta-final"
-      id="register-final"
-      style={{ borderRadius: 'var(--radius-section) 0 0 0' }}
-    >
+    <section className="hero cta-final" id="register-final">
       <div className="hero__glow hero__glow--1" aria-hidden="true" />
       <span className="cta-final__ghost" aria-hidden="true">
         09
@@ -35,9 +32,16 @@ export default function FinalCta() {
               </span>
             ))}
           </div>
-        </div>
 
-        <RegistrationForm idPrefix="final" title="Create your free account" />
+          <div className="cta-final__actions">
+            <a className="btn btn--lime" href="#register">
+              Open an account
+            </a>
+            <Link className="btn btn--ghost" to="/contact-us">
+              Contact Us
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   )

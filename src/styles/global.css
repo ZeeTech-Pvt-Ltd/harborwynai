@@ -1550,8 +1550,26 @@ input {
 
 /* ---------- Final CTA (split, mirrors hero) ---------- */
 
+.cta-final {
+  /* Boxed card centered at container width on the light page surface -
+     visually distinct from the solid navy footer that follows it. */
+  max-width: var(--container);
+  margin: 0 auto clamp(32px, 5vw, 64px);
+  border-radius: 32px;
+  background: linear-gradient(135deg, var(--slate) 0%, var(--blue-dark) 100%);
+  overflow: hidden;
+}
+
 .cta-final__inner {
-  padding-block: clamp(72px, 9vw, 120px);
+  padding-block: clamp(56px, 7vw, 96px);
+  grid-template-columns: 1fr;
+}
+
+.cta-final__actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 32px;
 }
 
 .cta-final__ghost {
