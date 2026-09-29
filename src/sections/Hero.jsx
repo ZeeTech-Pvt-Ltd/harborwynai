@@ -21,12 +21,14 @@ export default function Hero() {
           </span>
 
           <h1>
-            Harborwyn AI <span className="accent">Platform</span>
+            Harborwyn AI <span className="accent">Trading Platform</span>
           </h1>
 
           <p className="hero__sub">
             An AI-assisted trading platform that brings crypto and traditional markets together,
-            with tools that make trading feel effortless.
+            with tools that make trading feel effortless. Open an account from just $250 and trade
+            Bitcoin, Ethereum, Solana and more - automatically or manually - through partnered,
+            regulated brokers.
           </p>
 
           <div className="hero__points">
