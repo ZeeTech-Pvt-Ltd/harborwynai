@@ -10,9 +10,6 @@ export default function NotFound() {
   return (
     <main className="hero not-found">
       <div className="hero__glow hero__glow--1" aria-hidden="true" />
-      <span className="cta-final__ghost" aria-hidden="true">
-        404
-      </span>
 
       <div className="container thank-you__inner">
         <h1>

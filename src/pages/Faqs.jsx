@@ -30,9 +30,6 @@ export default function Faqs() {
       {/* Hero header, modeled on the reference site's "Here to Help" */}
       <section className="hero">
         <div className="hero__glow hero__glow--1" aria-hidden="true" />
-        <span className="cta-final__ghost" aria-hidden="true">
-          FAQ
-        </span>
         <div className="container hero__inner" data-reveal style={{ paddingBlock: 'clamp(64px, 8vw, 110px)', gridTemplateColumns: '1fr' }}>
           <div style={{ maxWidth: 860 }}>
             <span className="hero__eyebrow">

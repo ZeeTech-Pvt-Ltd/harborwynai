@@ -28,9 +28,6 @@ export default function AboutUs() {
       {/* Hero - split: text left, frosted stats panel right */}
       <section className="hero about-hero">
         <div className="hero__glow hero__glow--1" aria-hidden="true" />
-        <span className="cta-final__ghost" aria-hidden="true">
-          ABT
-        </span>
         <div className="container hero__inner about-hero__split" data-reveal>
           <div>
             <span className="hero__eyebrow">
