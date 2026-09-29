@@ -25,8 +25,8 @@ export default function Hero() {
           </h1>
 
           <p className="hero__sub">
-            A modern AI-assisted trading platform - bringing together crypto and traditional
-            markets with tools that make trading feel simple.
+            An AI-assisted trading platform that brings crypto and traditional markets together,
+            with tools that make trading feel effortless.
           </p>
 
           <div className="hero__points">
@@ -56,7 +56,7 @@ export default function Hero() {
         <RegistrationForm
           idPrefix="hero"
           title="Create your free account"
-          subtitle="Join 4m+ members and start trading in minutes."
+          subtitle="Join 4m+ members and make your first trade in minutes."
         />
       </div>
     </section>

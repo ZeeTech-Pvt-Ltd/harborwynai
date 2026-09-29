@@ -8,7 +8,7 @@ export default function HowItWorks() {
       <div className="container">
         <div className="section-head" data-reveal>
           <h2>Three steps to your first trade</h2>
-          <p>From sign-up to the markets in three simple steps.</p>
+          <p>From account to open position in three simple steps.</p>
         </div>
 
         <div className="steps-band__grid" data-reveal-grid>

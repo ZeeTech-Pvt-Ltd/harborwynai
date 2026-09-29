@@ -23,8 +23,8 @@ export default function FinalCta() {
             Ready to start your <span className="accent">trading journey?</span>
           </h2>
           <p className="hero__sub">
-            Join 4m+ members already trading with Harborwyn AI. Your free account takes minutes
-            to open - no experience needed.
+            Join 4m+ members who already trade with Harborwyn AI. A free account takes minutes to
+            open - and no experience is needed.
           </p>
 
           <div className="hero__points cta-final__points">

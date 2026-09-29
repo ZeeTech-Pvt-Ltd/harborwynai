@@ -16,7 +16,7 @@ export default function Home() {
   useMeta({
     title: 'Harborwyn AI - Official AI Crypto Trading Platform',
     description:
-      'Harborwyn AI - the AI-assisted crypto trading platform. Trade Bitcoin, Ethereum, Solana and more from $250, with automated or manual execution.',
+      'Harborwyn AI - AI-assisted crypto trading made simple. Trade Bitcoin, Ethereum, Solana and more from just $250, automated or manual, around the clock.',
     canonical: `${SITE_URL}/`,
   })
   return (

@@ -18,14 +18,13 @@ export default function Contact() {
           <span className="eyebrow eyebrow--light">Get in touch</span>
           <h1>Contact Harborwyn AI</h1>
           <p className="contact__lede">
-            We value communication and transparency. Whether you have questions about the
-            platform, need technical assistance, or want to explore a collaboration - we&apos;re
-            here to help.
+            We believe in open communication and transparency. A question about the platform, a
+            technical issue, or a collaboration idea - whatever it is, we&apos;re here to help.
           </p>
 
           <p className="contact__hint">
-            Fill out the form with your details and our team will get back to you as quickly as
-            possible. The Harborwyn AI support team can help with account setup, deposits and
+            Share your details in the form and our team will get back to you as quickly as
+            possible. The Harborwyn AI support team can assist with account setup, deposits and
             withdrawals, platform features, security settings and anything else you need to trade
             with confidence.
           </p>

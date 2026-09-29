@@ -9,50 +9,50 @@ export default function RiskDisclosure() {
     >
       <LegalSection heading="General Risk Warning">
         <p>
-          Trading in financial markets - including cryptocurrencies, equities, forex, commodities,
-          precious metals and CFDs - carries substantial risk and is not appropriate for every
-          investor. You may lose some or all of the capital you put in. You should never trade with
-          money you cannot afford to lose.
+          Trading in financial markets - cryptocurrencies, equities, forex, commodities, precious
+          metals and CFDs included - carries substantial risk and is not suitable for every
+          investor. You may lose some or all of the capital you commit. Never trade with money
+          you cannot afford to lose.
         </p>
       </LegalSection>
 
       <LegalSection heading="Market Volatility">
         <p>
-          Financial markets can be highly volatile. Prices can move rapidly and unpredictably,
-          and past performance is not a reliable indicator of future results. No automated
-          system, including AI-driven analysis, can guarantee profits or eliminate risk.
+          Financial markets can be highly volatile, with prices moving quickly and unpredictably.
+          Past performance is not a reliable indicator of future results, and no automated system
+          - AI-driven analysis included - can guarantee profits or remove risk.
         </p>
       </LegalSection>
 
       <LegalSection heading="Leverage and CFDs">
         <p>
-          Leveraged products such as CFDs amplify both gains and losses. A relatively small market
-          movement can have a large impact on your balance. You should fully understand how
-          leverage works before trading such instruments.
+          Leveraged products such as CFDs magnify gains and losses alike. Even a small market
+          movement can move your balance sharply. Make sure you fully understand leverage before
+          trading these instruments.
         </p>
       </LegalSection>
 
       <LegalSection heading="No Financial Advice">
         <p>
-          Nothing on this website or platform constitutes financial, investment or legal advice.
-          Content is provided for general information only. You are solely responsible for your
-          trading decisions and should consider seeking independent professional advice.
+          Nothing on this website or platform is financial, investment or legal advice. Content is
+          provided for general information only. You alone are responsible for your trading
+          decisions, and you may wish to seek independent professional advice.
         </p>
       </LegalSection>
 
       <LegalSection heading="Technology Risks">
         <p>
-          While we employ industry-leading security measures, including SSL 256-bit encryption and
-          cold storage, no system is entirely immune to technical failure, cyber attack or human
-          error. You are responsible for safeguarding your own account credentials.
+          Although we use industry-leading security measures - SSL 256-bit encryption and cold
+          storage among them - no system is entirely immune to technical failure, cyber attack or
+          human error. Safeguarding your account credentials remains your responsibility.
         </p>
       </LegalSection>
 
       <LegalSection heading="Your Responsibility">
         <p>
-          Before trading, carefully assess your financial situation, experience level and
-          risk tolerance. Trade only with capital you can afford to lose, and seek independent
-          advice if you are in any doubt.
+          Before you trade, take stock of your financial situation, experience and risk tolerance.
+          Trade only with capital you can afford to lose, and seek independent advice whenever you
+          are in doubt.
         </p>
       </LegalSection>
 

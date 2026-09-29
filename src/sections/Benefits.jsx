@@ -9,8 +9,8 @@ export default function Benefits() {
           <span className="eyebrow">Why trade</span>
           <h2>Why traders choose Harborwyn AI</h2>
           <p>
-            Every part of the experience is designed to remove the hurdles that keep people out
-            of the markets.
+            Every detail of the platform is designed to clear away the hurdles that keep people
+            out of the markets.
           </p>
         </div>
 

@@ -9,9 +9,9 @@ export default function About() {
           <span className="eyebrow">About the platform</span>
           <h2>Meet the Harborwyn AI platform</h2>
           <p>
-            Harborwyn AI is an online trading platform built for traders worldwide. It brings a
-            broad range of markets together in one place, with tools that do the heavy lifting so
-            you can focus on the decisions that matter.
+            Harborwyn AI is an online trading platform created for traders everywhere. It unites a
+            broad range of markets in a single place, with tools that handle the heavy lifting so
+            you can concentrate on the decisions that matter.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ export default function About() {
         </div>
 
         <p style={{ marginTop: 28, textAlign: 'center', color: 'var(--ink-muted)', fontSize: 15 }}>
-          Start with a minimum deposit of just{' '}
+          Open an account from just{' '}
           <strong style={{ color: 'var(--blue)' }}>$250</strong> - no experience required.
         </p>
       </div>

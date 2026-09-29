@@ -13,7 +13,7 @@ const initialFields = { firstName: '', lastName: '', email: '', consent: true }
  * gemwealth-holm.com form's rules:
  * - required first/last name, email, valid international phone, consent
  * - honeypot "website" field: bots that fill it get silently dropped
- * - phone auto-detected via ipapi.co, validated with libphonenumber
+ * - phone auto-detected via ipwho.is (ipapi.co fallback), validated with libphonenumber
  * - POSTs JSON {firstName, lastName, email, phone, offerName} with the
  *   phone in full international format
  */
@@ -29,6 +29,8 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
   // Code-split: intl-tel-input (with its utils) loads on demand via a
   // dynamic import, so it stays out of the initial JS bundle while the
   // flag + country code still appear as soon as the page renders.
+  // The field starts on the UK (flag + dial code show immediately), then
+  // switches to the user's country once the IP lookup resolves.
   useEffect(() => {
     if (!phoneInputRef.current) return
     let cancelled = false
@@ -36,15 +38,10 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
     import('intl-tel-input/intlTelInputWithUtils').then(({ default: intlTelInput }) => {
       if (cancelled || !phoneInputRef.current) return
       iti = intlTelInput(phoneInputRef.current, {
-        initialCountry: '', // auto-detect via the lookup below
+        initialCountry: 'gb',
         separateDialCode: true,
         placeholderNumberPolicy: 'AGGRESSIVE', // country-specific example placeholder
         placeholderNumberType: 'MOBILE',
-        initialCountryLookup: () =>
-          fetch('https://ipapi.co/json/')
-            .then((r) => r.json())
-            .then((d) => d.country_code || 'au')
-            .catch(() => 'au'),
       })
       itiRef.current = iti
       // Order the country selector as: flag → dial code → dropdown arrow.
@@ -52,6 +49,28 @@ export default function RegistrationForm({ idPrefix = 'reg', title, subtitle }) 
       const arrow = container?.querySelector('.iti__arrow')
       const selectedCountry = container?.querySelector('.iti__selected-country')
       if (arrow && selectedCountry) selectedCountry.appendChild(arrow)
+
+      // Detect the visitor's country from their IP and update the field;
+      // on any failure the UK default stays in place. ipwho.is is primary
+      // (CORS-friendly, no key); ipapi.co is the fallback.
+      const lookups = [
+        fetch('https://ipwho.is/')
+          .then((r) => r.json())
+          .then((d) => (d.success === false ? null : d.country_code)),
+        fetch('https://ipapi.co/json/')
+          .then((r) => r.json())
+          .then((d) => d.country_code),
+      ]
+      Promise.any(lookups)
+        .then((country) => {
+          const iso2 = typeof country === 'string' ? country.toLowerCase() : ''
+          if (!cancelled && iso2 && iso2 !== 'gb') {
+            iti.setSelectedCountry(iso2)
+          }
+        })
+        .catch(() => {
+          // Lookup unavailable - keep the UK default.
+        })
     })
     return () => {
       cancelled = true

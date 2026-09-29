@@ -39,14 +39,14 @@ export default function Faqs() {
               <span className="dot" aria-hidden="true" />
               FAQs
             </span>
-            <h1 style={{ fontSize: 'clamp(40px, 5.5vw, 68px)' }}>
+            <h1 style={{ fontSize: 'clamp(34px, 4vw, 52px)' }}>
               Harborwyn AI <span className="accent">FAQs</span>
             </h1>
             <p className="hero__sub">
-              Whether you are getting started, managing your portfolio or need help with your
-              account, we can answer common platform questions. Harborwyn AI is built for traders
-              worldwide - from first-time users exploring crypto to experienced investors managing
-              a diversified portfolio.
+              Getting started, managing a portfolio or simply needing account help - we can answer
+              the most common platform questions. Harborwyn AI is built for traders worldwide,
+              from first-timers exploring crypto to seasoned investors running a diversified
+              portfolio.
             </p>
 
             <div className="faqs-quick" data-reveal>
@@ -67,7 +67,7 @@ export default function Faqs() {
           <div className="section-head" data-reveal>
             <span className="eyebrow">FAQ</span>
             <h2>Frequently asked questions</h2>
-            <p>Everything you need to know about trading with Harborwyn AI.</p>
+            <p>Everything you need to know about trading on Harborwyn AI.</p>
           </div>
 
           <FaqList items={FAQS_PAGE} />
@@ -77,8 +77,8 @@ export default function Faqs() {
       {/* Bottom CTA */}
       <section className="section section--tight">
         <div className="container faqs-cta">
-          <h2>Can&apos;t find what you&apos;re looking for?</h2>
-          <p>Our team is ready to help with anything else you need.</p>
+          <h2>Can&apos;t find the answer you need?</h2>
+          <p>Our team is ready to help with anything else.</p>
           <Link to="/contact-us" className="btn btn--lime">
             Contact Us
           </Link>

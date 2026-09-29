@@ -23,9 +23,8 @@ export default function Footer() {
           <div className="site-footer__brand">
             <Logo />
             <p>
-              {BRAND} is an online trading platform for traders worldwide - combining a broad
-              range of markets with AI-assisted tools designed to make trading accessible to
-              everyone.
+              {BRAND} is an online trading platform for traders everywhere - pairing a broad range
+              of markets with AI-assisted tools built to make trading accessible to all.
             </p>
             <div className="site-footer__contact">
               <span>Contact us:</span>

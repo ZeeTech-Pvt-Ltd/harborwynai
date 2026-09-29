@@ -37,12 +37,12 @@ export default function AboutUs() {
               <span className="dot" aria-hidden="true" />
               About us
             </span>
-            <h1 style={{ fontSize: 'clamp(40px, 5.5vw, 68px)' }}>
+            <h1 style={{ fontSize: 'clamp(34px, 4vw, 52px)' }}>
               Smart, automated crypto trading with <span className="accent">Harborwyn AI</span>
             </h1>
             <p className="hero__sub">
-              Harborwyn AI supports market analysis, helping you assess opportunities, respond
-              efficiently and invest with greater transparency.
+              Harborwyn AI powers your market analysis, helping you size up opportunities, act
+              efficiently and invest with full transparency.
             </p>
             <div style={{ display: 'flex', gap: 14, marginTop: 32, flexWrap: 'wrap' }}>
               <Link to="/#register" className="btn btn--lime">
@@ -72,8 +72,8 @@ export default function AboutUs() {
             <span className="eyebrow">What we offer</span>
             <h2>Technology, security and personalised support</h2>
             <p>
-              Our platform brings together automated market analysis and support resources to help
-              you make more informed decisions.
+              Our platform combines automated market analysis with support resources, helping you
+              reach better-informed decisions.
             </p>
           </div>
           <div className="about-feature-list" data-reveal-grid>
@@ -154,17 +154,18 @@ export default function AboutUs() {
           <div className="about-longterm" data-reveal>
             <strong>Think long term</strong>
             <p>
-              We are not focused on short-term gains. Harborwyn AI is built to support ongoing
-              trading through stable technology, consistent service and continuous platform
+              We are not chasing short-term wins. Harborwyn AI is built to support long-term
+              trading through stable technology, dependable service and steady platform
               development.
             </p>
           </div>
 
           <p style={{ marginTop: 28, color: 'var(--ink-muted)', maxWidth: 90 + 'ch' }}>
-            Whatever your experience level, Harborwyn AI is designed to help traders worldwide
-            trade with clarity. From your first crypto purchase to a diversified portfolio across
-            forex, shares and commodities, the platform brings analysis, execution and account
-            controls together in one place - so you can focus on the decisions that matter.
+            Wherever you are in your trading journey, Harborwyn AI is designed to help traders
+            worldwide operate with clarity. From your first crypto purchase to a diversified
+            portfolio spanning forex, shares and commodities, the platform unites analysis,
+            execution and account controls in one place - leaving you free to focus on the
+            decisions that matter.
           </p>
         </div>
       </section>

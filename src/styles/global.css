@@ -1,34 +1,34 @@
 /* ============================================================
    Harborwyn AI - global styles
-   Palette extracted from the live site's "blue" theme:
-   light surface #f9fafb · ink #030712 · slate #1e2939
-   blue #155dfc · lime #9ae600 · cards #f3f4f6
+   Ocean palette (harbor theme):
+   light surface #f0f7f7 · ink #06121f · navy #0a2540
+   cyan #0e7490 · seafoam #34d399 · cards #e9f2f2
    ============================================================ */
 
 :root {
   /* Surfaces */
-  --surface: #f9fafb;
-  --ink: #030712;
-  --ink-muted: #4a5565;
-  --card: #f3f4f6;
+  --surface: #f0f7f7;
+  --ink: #06121f;
+  --ink-muted: #40596a;
+  --card: #e9f2f2;
   --white: #ffffff;
 
-  /* Dark slate sections (header, hero, footer) */
-  --slate: #1e2939;
-  --on-slate: #f9fafb;
-  --on-slate-muted: #a6b1c2;
+  /* Dark navy sections (header, hero, footer) */
+  --slate: #0a2540;
+  --on-slate: #f0f7f7;
+  --on-slate-muted: #9fb8cc;
 
-  /* Blue accent (bands, form card, links on light) */
-  --blue: #155dfc;
-  --blue-dark: #0f4ad9;
-  --on-blue: #f9fafb;
-  --blue-soft: #dbeafe;
-  --blue-soft-ink: #162456;
+  /* Cyan accent (bands, form card, links on light) */
+  --blue: #0e7490;
+  --blue-dark: #155e75;
+  --on-blue: #ffffff;
+  --blue-soft: #cff4fb;
+  --blue-soft-ink: #155e75;
 
-  /* Lime (primary CTA, accents on dark) */
-  --lime: #9ae600;
-  --lime-dark: #7ccf00;
-  --on-lime: #192e03;
+  /* Seafoam (primary CTA, accents on dark) */
+  --lime: #34d399;
+  --lime-dark: #22b47e;
+  --on-lime: #052e25;
 
   /* Feedback */
   --error: #c10007;
@@ -190,7 +190,7 @@ input {
 
 .btn--lime:hover {
   background: var(--lime-dark);
-  box-shadow: 0 10px 30px rgba(154, 230, 0, 0.35);
+  box-shadow: 0 10px 30px rgba(52, 211, 153, 0.35);
 }
 
 .btn--blue {
@@ -200,7 +200,7 @@ input {
 
 .btn--blue:hover {
   background: var(--blue-dark);
-  box-shadow: 0 10px 30px rgba(21, 93, 252, 0.35);
+  box-shadow: 0 10px 30px rgba(14, 116, 144, 0.35);
 }
 
 .btn--blue-soft {
@@ -209,13 +209,13 @@ input {
 }
 
 .btn--blue-soft:hover {
-  box-shadow: 0 8px 24px rgba(21, 93, 252, 0.18);
+  box-shadow: 0 8px 24px rgba(14, 116, 144, 0.18);
 }
 
 .btn--ghost {
   background: transparent;
   color: var(--on-slate);
-  border-color: rgba(239, 248, 255, 0.55);
+  border-color: rgba(207, 244, 251, 0.55);
 }
 
 .btn--ghost:hover {
@@ -296,7 +296,7 @@ input {
 .menu-toggle {
   display: none;
   background: none;
-  border: 1px solid rgba(239, 248, 255, 0.55);
+  border: 1px solid rgba(207, 244, 251, 0.55);
   border-radius: 10px;
   color: var(--on-slate);
   padding: 8px 12px;
@@ -358,7 +358,7 @@ input {
 .hero__glow--2 {
   width: 360px;
   height: 360px;
-  background: rgba(154, 230, 0, 0.35);
+  background: rgba(52, 211, 153, 0.35);
   bottom: -160px;
   left: -100px;
 }
@@ -379,7 +379,7 @@ input {
   gap: 8px;
   padding: 8px 18px;
   border-radius: 999px;
-  border: 1px solid rgba(239, 248, 255, 0.3);
+  border: 1px solid rgba(207, 244, 251, 0.3);
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -396,7 +396,7 @@ input {
 
 .hero h1 {
   margin-top: 24px;
-  font-size: clamp(36px, 5vw, 62px);
+  font-size: clamp(30px, 4vw, 50px);
   letter-spacing: -0.03em;
 }
 
@@ -424,7 +424,7 @@ input {
   gap: 8px;
   padding: 9px 16px;
   border-radius: 999px;
-  background: rgba(249, 250, 251, 0.08);
+  background: rgba(240, 247, 247, 0.08);
   font-size: 14px;
   font-weight: 600;
   color: var(--on-slate);
@@ -437,9 +437,9 @@ input {
 /* ---------- Registration form card ---------- */
 
 .form-card {
-  background: rgba(249, 250, 251, 0.06);
+  background: rgba(240, 247, 247, 0.06);
   color: var(--on-slate);
-  border: 1px solid rgba(249, 250, 251, 0.18);
+  border: 1px solid rgba(240, 247, 247, 0.18);
   border-radius: var(--radius-card);
   padding: clamp(24px, 3vw, 36px);
   box-shadow: 0 30px 70px rgba(2, 6, 24, 0.45);
@@ -480,12 +480,12 @@ input {
 }
 
 .field input::placeholder {
-  color: #8b94a3;
+  color: #7d97ab;
 }
 
 .field input:focus {
   border-color: var(--lime);
-  box-shadow: 0 0 0 3px rgba(154, 230, 0, 0.35);
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.35);
 }
 
 .phone-row {
@@ -500,8 +500,8 @@ input {
   justify-content: center;
   gap: 6px;
   border-radius: 12px;
-  background: rgba(249, 250, 251, 0.14);
-  border: 1px solid rgba(249, 250, 251, 0.25);
+  background: rgba(240, 247, 247, 0.14);
+  border: 1px solid rgba(240, 247, 247, 0.25);
   font-weight: 600;
   font-size: 15px;
   cursor: default;
@@ -520,8 +520,8 @@ input {
 .form-success {
   padding: 24px 16px;
   border-radius: 16px;
-  background: rgba(154, 230, 0, 0.12);
-  border: 1px solid rgba(154, 230, 0, 0.45);
+  background: rgba(52, 211, 153, 0.12);
+  border: 1px solid rgba(52, 211, 153, 0.45);
   color: var(--lime);
   text-align: center;
   font-weight: 600;
@@ -544,14 +544,14 @@ input {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  border-top: 1px solid #e8eaee;
-  border-bottom: 1px solid #e8eaee;
+  border-top: 1px solid #dbe6e9;
+  border-bottom: 1px solid #dbe6e9;
   padding-block: 44px 40px;
 }
 
 .stat {
   text-align: center;
-  border-right: 1px solid #e8eaee;
+  border-right: 1px solid #dbe6e9;
   padding-inline: 8px;
 }
 
@@ -584,7 +584,7 @@ input {
   }
 
   .stat {
-    border-bottom: 1px solid #e8eaee;
+    border-bottom: 1px solid #dbe6e9;
     padding-block: 24px;
   }
 
@@ -607,8 +607,8 @@ input {
   /* :nth-child(n) matches the specificity of the tablet rules above
      so the two-column divider pattern is applied cleanly. */
   .stat:nth-child(n) {
-    border-right: 1px solid #e8eaee;
-    border-bottom: 1px solid #e8eaee;
+    border-right: 1px solid #dbe6e9;
+    border-bottom: 1px solid #dbe6e9;
     padding-block: 20px;
   }
 
@@ -658,8 +658,8 @@ input {
 }
 
 .band-quote {
-  background: rgba(249, 250, 251, 0.1);
-  border: 1px solid rgba(249, 250, 251, 0.18);
+  background: rgba(240, 247, 247, 0.1);
+  border: 1px solid rgba(240, 247, 247, 0.18);
   border-radius: 20px;
   padding: 20px 22px;
 }
@@ -748,13 +748,13 @@ input {
 }
 
 .feature--blue .feature__icon {
-  background: rgba(249, 250, 251, 0.14);
+  background: rgba(240, 247, 247, 0.14);
   color: var(--lime);
   box-shadow: none;
 }
 
 .feature--blue p {
-  color: rgba(249, 250, 251, 0.85);
+  color: rgba(240, 247, 247, 0.85);
 }
 
 /* ---------- Three steps (dark slate band) ---------- */
@@ -780,15 +780,15 @@ input {
 .steps-band__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: 1px solid rgba(249, 250, 251, 0.16);
+  border: 1px solid rgba(240, 247, 247, 0.16);
   border-radius: var(--radius-card);
   overflow: hidden;
-  background: rgba(249, 250, 251, 0.04);
+  background: rgba(240, 247, 247, 0.04);
 }
 
 .steps-band__item {
   padding: 44px 36px;
-  border-right: 1px solid rgba(249, 250, 251, 0.16);
+  border-right: 1px solid rgba(240, 247, 247, 0.16);
 }
 
 .steps-band__item:last-child {
@@ -824,7 +824,7 @@ input {
 
   .steps-band__item {
     border-right: 0;
-    border-bottom: 1px solid rgba(249, 250, 251, 0.16);
+    border-bottom: 1px solid rgba(240, 247, 247, 0.16);
   }
 
   .steps-band__item:last-child {
@@ -890,11 +890,11 @@ input {
   gap: 5px;
   padding: 5px 10px;
   border-radius: 999px;
-  background: rgba(154, 230, 0, 0.18);
+  background: rgba(52, 211, 153, 0.18);
   color: var(--on-lime);
   font-size: 12px;
   font-weight: 700;
-  background: #eefbcb;
+  background: #d9f5e9;
 }
 
 /* ---------- FAQ ---------- */
@@ -1003,7 +1003,7 @@ input {
 }
 
 .site-footer__risk {
-  border-top: 1px solid rgba(239, 248, 255, 0.12);
+  border-top: 1px solid rgba(207, 244, 251, 0.12);
   padding-block: 28px;
   font-size: 13px;
   line-height: 1.7;
@@ -1011,7 +1011,7 @@ input {
 }
 
 .site-footer__bottom {
-  border-top: 1px solid rgba(239, 248, 255, 0.12);
+  border-top: 1px solid rgba(207, 244, 251, 0.12);
   padding-block: 22px;
   display: flex;
   align-items: center;
@@ -1032,7 +1032,7 @@ input {
 }
 
 .legal h1 {
-  font-size: clamp(30px, 4vw, 44px);
+  font-size: clamp(28px, 3.5vw, 40px);
   letter-spacing: -0.02em;
 }
 
@@ -1054,7 +1054,7 @@ input {
 .legal p,
 .legal li {
   font-size: 15.5px;
-  color: #374151;
+  color: #2f4959;
 }
 
 .legal p + p {
@@ -1202,7 +1202,7 @@ input {
   border-radius: 999px;
   border: none;
   padding: 0;
-  background: #d8dbe0;
+  background: #c9d9dc;
   cursor: pointer;
   transition: background-color 0.2s ease, width 0.2s ease;
 }
@@ -1234,16 +1234,16 @@ input {
 
 .benefit-card {
   background: var(--white);
-  border: 1px solid rgba(16, 32, 0, 0.18);
+  border: 1px solid rgba(4, 40, 33, 0.18);
   border-radius: var(--radius-card);
   padding: 26px 24px;
-  box-shadow: 0 10px 30px rgba(16, 32, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(4, 40, 33, 0.08);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .benefit-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 36px rgba(16, 32, 0, 0.14);
+  box-shadow: 0 16px 36px rgba(4, 40, 33, 0.14);
 }
 
 .benefit-card__icon {
@@ -1295,8 +1295,8 @@ input {
   display: flex;
   align-items: baseline;
   gap: 14px;
-  background: rgba(249, 250, 251, 0.06);
-  border: 1px solid rgba(249, 250, 251, 0.18);
+  background: rgba(240, 247, 247, 0.06);
+  border: 1px solid rgba(240, 247, 247, 0.18);
   border-radius: var(--radius-card);
   padding: 20px 24px;
 }
@@ -1325,11 +1325,11 @@ input {
   gap: 20px;
   align-items: center;
   padding-block: 22px;
-  border-top: 1px solid #e8eaee;
+  border-top: 1px solid #dbe6e9;
 }
 
 .about-feature-row:last-child {
-  border-bottom: 1px solid #e8eaee;
+  border-bottom: 1px solid #dbe6e9;
 }
 
 .about-feature-row__num {
@@ -1391,8 +1391,8 @@ input {
 
 .about-longterm {
   margin-top: 28px;
-  background: #eef9d2;
-  border: 1px solid rgba(16, 32, 0, 0.2);
+  background: #d9f5e9;
+  border: 1px solid rgba(4, 40, 33, 0.2);
   border-radius: var(--radius-card);
   padding: 22px 26px;
 }
@@ -1405,7 +1405,7 @@ input {
 
 .about-longterm p {
   margin-top: 6px;
-  color: rgba(16, 32, 0, 0.75);
+  color: rgba(4, 40, 33, 0.75);
   font-size: 14.5px;
   max-width: 90ch;
 }
@@ -1424,7 +1424,7 @@ input {
   }
 
   .about-story-grid .steps-band__item {
-    border-bottom: 1px solid rgba(249, 250, 251, 0.16);
+    border-bottom: 1px solid rgba(240, 247, 247, 0.16);
   }
 
   .about-story-grid .steps-band__item:nth-child(3n) {
@@ -1449,7 +1449,7 @@ input {
      so the divider above "05" (item 4's bottom border) is restored. */
   .about-story-grid .steps-band__item:nth-child(n) {
     border-right: 0;
-    border-bottom: 1px solid rgba(249, 250, 251, 0.16);
+    border-bottom: 1px solid rgba(240, 247, 247, 0.16);
   }
 
   .about-story-grid .steps-band__item:last-child {
@@ -1480,8 +1480,8 @@ input {
 }
 
 .faqs-quick__card {
-  background: rgba(249, 250, 251, 0.06);
-  border: 1px solid rgba(249, 250, 251, 0.18);
+  background: rgba(240, 247, 247, 0.06);
+  border: 1px solid rgba(240, 247, 247, 0.18);
   border-radius: var(--radius-card);
   padding: 22px 20px;
 }
@@ -1540,7 +1540,7 @@ input {
 }
 
 .thank-you h1 {
-  font-size: clamp(44px, 6vw, 76px);
+  font-size: clamp(36px, 5vw, 60px);
 }
 
 .thank-you__sub {
@@ -1562,7 +1562,7 @@ input {
   font-weight: 700;
   font-size: clamp(90px, 12vw, 160px);
   line-height: 1;
-  color: rgba(249, 250, 251, 0.06);
+  color: rgba(240, 247, 247, 0.06);
   user-select: none;
   pointer-events: none;
 }
@@ -1649,7 +1649,7 @@ html.js .about-hero__panel[data-reveal] {
 
 .contact__intro h1 {
   margin-top: 20px;
-  font-size: clamp(36px, 4.5vw, 56px);
+  font-size: clamp(30px, 4vw, 48px);
 }
 
 .eyebrow--light {
@@ -1714,7 +1714,7 @@ html.js .about-hero__panel[data-reveal] {
   height: 46px;
   padding: 10px 14px;
   border-radius: 12px;
-  border: 1px solid rgba(249, 250, 251, 0.15);
+  border: 1px solid rgba(240, 247, 247, 0.15);
   background: rgba(2, 6, 24, 0.4);
   color: var(--on-slate);
   font-size: 15px;
@@ -1728,7 +1728,7 @@ html.js .about-hero__panel[data-reveal] {
 
 .contact-form__field input:focus {
   border-color: var(--lime);
-  box-shadow: 0 0 0 3px rgba(154, 230, 0, 0.25);
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.25);
 }
 
 .contact-form__consent {
@@ -1790,7 +1790,7 @@ html.js .about-hero__panel[data-reveal] {
   border-radius: 12px;
   overflow: hidden;
   background: var(--card);
-  border: 1px solid #e8eaee;
+  border: 1px solid #dbe6e9;
   margin-right: 12px;
   flex-shrink: 0;
 }
@@ -1839,7 +1839,7 @@ html.js .about-hero__panel[data-reveal] {
 
 .phone-iti .iti__country-container {
   background: rgba(2, 6, 24, 0.45);
-  border-right: 1px solid rgba(249, 250, 251, 0.16);
+  border-right: 1px solid rgba(240, 247, 247, 0.16);
   border-radius: 12px 0 0 12px;
 }
 
@@ -1860,7 +1860,7 @@ html.js .about-hero__panel[data-reveal] {
 
 .phone-iti .iti__country-selector {
   background: var(--slate);
-  border: 1px solid rgba(249, 250, 251, 0.16);
+  border: 1px solid rgba(240, 247, 247, 0.16);
   border-radius: 12px;
   color: var(--on-slate);
   box-shadow: 0 20px 50px rgba(2, 6, 24, 0.5);
@@ -1875,14 +1875,14 @@ html.js .about-hero__panel[data-reveal] {
 }
 
 .phone-iti .iti__country.iti__highlight {
-  background: rgba(249, 250, 251, 0.08);
+  background: rgba(240, 247, 247, 0.08);
 }
 
 /* Search input inside the dark dropdown */
 .phone-iti .iti__search-input {
   background: rgba(2, 6, 24, 0.45);
   color: var(--on-slate);
-  border: 1px solid rgba(249, 250, 251, 0.16);
+  border: 1px solid rgba(240, 247, 247, 0.16);
   height: auto;
   padding: 10px 36px 10px 34px; /* left clears the search icon, right the clear button */
 }
@@ -1893,7 +1893,7 @@ html.js .about-hero__panel[data-reveal] {
 
 .phone-iti .iti__search-input:focus {
   border-color: var(--lime);
-  box-shadow: 0 0 0 3px rgba(154, 230, 0, 0.25);
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.25);
 }
 
 .phone-error {
@@ -1911,7 +1911,7 @@ html.js .about-hero__panel[data-reveal] {
 
 .security-card {
   background: var(--white);
-  border: 1px solid #e8eaee;
+  border: 1px solid #dbe6e9;
   border-radius: var(--radius-card);
   padding: 28px 26px;
   box-shadow: 0 10px 30px rgba(2, 6, 24, 0.05);

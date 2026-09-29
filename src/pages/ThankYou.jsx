@@ -21,8 +21,8 @@ export default function ThankYou() {
           Thank <span className="accent">You!</span>
         </h1>
         <p className="hero__sub thank-you__sub">
-          Your registration has been received. Our team will contact you shortly to get you
-          started.
+          We have received your registration. A member of our team will contact you shortly to
+          help you get started.
         </p>
         <Link to="/" className="btn btn--lime">
           Back to Home
