@@ -1,0 +1,23 @@
+# Harborwyn AI
+
+> Harborwyn AI is the AI-assisted crypto trading platform. Trade Bitcoin, Ethereum, Solana and more from just $250, with automated or manual execution through partnered, regulated brokers.
+
+Key pages and resources for the Harborwyn AI website.
+
+## Site
+
+- [Home](https://harborwynai.io/): Harborwyn AI overview - platform features, security, testimonials and registration
+- [About Us](https://harborwynai.io/about-us): Our story, values and how the platform works
+- [Contact Us](https://harborwynai.io/contact-us): Support and contact details
+- [FAQs](https://harborwynai.io/faqs): Frequently asked questions - fees, security, withdrawals and getting started
+
+## Legal
+
+- [Privacy Policy](https://harborwynai.io/privacy-policy)
+- [Terms of Use](https://harborwynai.io/terms-of-use)
+- [Risk Disclosure](https://harborwynai.io/risk-disclosure)
+
+## Resources
+
+- [Sitemap](https://harborwynai.io/sitemap.xml)
+- [Robots](https://harborwynai.io/robots.txt)
