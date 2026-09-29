@@ -20,7 +20,7 @@ export default function Home() {
     canonical: `${SITE_URL}/`,
   })
   return (
-    <>
+    <main>
       <Hero />
       <Stats />
       <HowItWorks />
@@ -32,6 +32,6 @@ export default function Home() {
       <Security />
       <Faq />
       <FinalCta />
-    </>
+    </main>
   )
 }
