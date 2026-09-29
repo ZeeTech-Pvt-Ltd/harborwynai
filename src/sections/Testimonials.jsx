@@ -106,7 +106,7 @@ export default function Testimonials() {
                   className="testimonial__head"
                   style={{ display: 'flex', justifyContent: 'space-between' }}
                 >
-                  <span className="testimonial__stars" aria-label="5 star rating">
+                  <span className="testimonial__stars" role="img" aria-label="5 star rating">
                     {[1, 2, 3, 4, 5].map((i) => (
                       <Icon key={i} name="star" size={16} filled />
                     ))}

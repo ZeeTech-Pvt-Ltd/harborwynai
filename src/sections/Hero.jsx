@@ -40,6 +40,7 @@ export default function Hero() {
 
           <div
             className="rating"
+            role="img"
             style={{ marginTop: 28, color: 'var(--on-slate)' }}
             aria-label={`Rated ${RATING.score} out of 5 from ${RATING.reviews} reviews`}
           >
