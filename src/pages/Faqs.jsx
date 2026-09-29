@@ -52,7 +52,7 @@ export default function Faqs() {
             <div className="faqs-quick" data-reveal>
               {FAQ_QUICK_CARDS.map(({ title, text }) => (
                 <div className="faqs-quick__card" key={title}>
-                  <h3>{title}</h3>
+                  <h2>{title}</h2>
                   <p>{text}</p>
                 </div>
               ))}

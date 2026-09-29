@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
 
           <div className="site-footer__col">
-            <h4>Platform</h4>
+            <h3>Platform</h3>
             <ul>
               {PLATFORM_LINKS.map(({ label, to }) => (
                 <li key={to}>
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
 
           <div className="site-footer__col">
-            <h4>Legal</h4>
+            <h3>Legal</h3>
             <ul>
               {LEGAL_LINKS.map(({ label, to }) => (
                 <li key={to}>

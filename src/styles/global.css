@@ -960,7 +960,7 @@ input {
   padding-block: clamp(56px, 6vw, 80px) clamp(40px, 5vw, 56px);
 }
 
-.site-footer h4 {
+.site-footer h3 {
   font-size: 16px;
   margin-bottom: 18px;
 }
@@ -1486,7 +1486,7 @@ input {
   padding: 22px 20px;
 }
 
-.faqs-quick__card h3 {
+.faqs-quick__card h2 {
   color: var(--lime);
   font-size: 16.5px;
 }
