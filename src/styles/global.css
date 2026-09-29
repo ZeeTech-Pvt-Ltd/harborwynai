@@ -1841,7 +1841,7 @@ html.js .about-hero__panel[data-reveal] {
   width: 100%;
   height: 46px;
   /* the lib sets padding-left inline, so !important is required */
-  padding-left: 94px !important; /* little gap after the country code */
+  padding-left: 108px !important; /* visible gap after the country code */
 }
 
 .phone-iti .iti__country-container {
