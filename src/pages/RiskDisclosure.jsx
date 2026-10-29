@@ -4,6 +4,7 @@ export default function RiskDisclosure() {
   return (
     <LegalPage
       title="Risk Disclosure"
+      metaTitle="Harborwyn AI Risk Disclosure - Trading Risks Explained"
       description="Harborwyn AI Risk Disclosure - trading financial markets carries substantial risk and is not suitable for every investor."
       updated="1 August 2026"
     >

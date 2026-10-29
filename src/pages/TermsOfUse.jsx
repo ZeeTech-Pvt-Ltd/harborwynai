@@ -4,6 +4,7 @@ export default function TermsOfUse() {
   return (
     <LegalPage
       title="Terms of Use"
+      metaTitle="Harborwyn AI Terms of Use - Agreement & Conditions"
       description="Harborwyn AI Terms of Use - the rules that govern your use of our website and trading platform."
       updated="1 August 2026"
     >

@@ -5,7 +5,7 @@ import { CONTACT_EMAIL, SITE_URL } from '../data/content'
 
 export default function Contact() {
   useMeta({
-    title: 'Contact Harborwyn AI - Get Support & Assistance',
+    title: 'Contact Harborwyn AI - Get Expert Support & Assistance',
     canonical: `${SITE_URL}/contact-us`,
     description:
       'Contact Harborwyn AI - questions about the platform, technical assistance or collaborations. Our team is ready to help.',

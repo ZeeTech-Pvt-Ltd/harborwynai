@@ -4,6 +4,7 @@ export default function PrivacyPolicy() {
   return (
     <LegalPage
       title="Privacy Policy"
+      metaTitle="Harborwyn AI Privacy Policy - Your Data, Protected"
       description="Read the Harborwyn AI Privacy Policy - how we collect, use and protect your personal information."
       updated="1 August 2026"
     >

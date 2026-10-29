@@ -5,10 +5,10 @@ import { BRAND, CONTACT_EMAIL, SITE_URL } from '../data/content'
  * Shared layout for legal pages. Content is template text - have a
  * lawyer review each page before launch.
  */
-export default function LegalPage({ title, description, updated, children }) {
+export default function LegalPage({ title, metaTitle, description, updated, children }) {
   const slug = title.toLowerCase().replace(/\s+/g, '-')
   useMeta({
-    title: `${title} - ${BRAND}`,
+    title: metaTitle || `${title} - ${BRAND}`,
     description,
     canonical: `${SITE_URL}/${slug}`,
   })

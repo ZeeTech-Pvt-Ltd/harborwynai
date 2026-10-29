@@ -5,7 +5,7 @@ import { SITE_URL } from '../data/content'
 
 export default function ThankYou() {
   useMeta({
-    title: 'Thank You for Registering - Harborwyn AI',
+    title: 'Thank You for Registering with Harborwyn AI Platform',
     canonical: `${SITE_URL}/thank-you`,
     description: 'Thank you for registering with Harborwyn AI. Our team will contact you shortly.',
   })

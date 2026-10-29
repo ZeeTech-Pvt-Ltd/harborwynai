@@ -5,7 +5,7 @@ import { FAQS_PAGE, FAQ_QUICK_CARDS, SITE_URL } from '../data/content'
 
 export default function Faqs() {
   useMeta({
-    title: 'Harborwyn AI FAQs - Fees, Security & How It Works',
+    title: 'Harborwyn AI FAQs - Fees, Security & How Trading Works',
     canonical: `${SITE_URL}/faqs`,
     description:
       'Harborwyn AI frequently asked questions - how the platform works, security, withdrawals, fees, and more.',
