@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Icon from '../components/Icon'
 import RegistrationForm from '../components/RegistrationForm'
 import useMeta from '../hooks/useMeta'
@@ -15,12 +16,42 @@ export default function Contact() {
     <main className="contact">
       <div className="container contact__inner">
         <div className="contact__intro">
-          <span className="eyebrow eyebrow--light">Get in touch</span>
+          <span className="eyebrow">Get in touch</span>
           <h1>Contact Harborwyn AI</h1>
           <p className="contact__lede">
             We believe in open communication and transparency. A question about the platform, a
             technical issue, or a collaboration idea - whatever it is, we&apos;re here to help.
           </p>
+
+          <div className="contact-cards">
+            <a className="contact-card" href={`mailto:${CONTACT_EMAIL}`}>
+              <span className="contact-card__icon" aria-hidden="true">
+                <Icon name="mail" size={20} />
+              </span>
+              <span>
+                <strong>Email us</strong>
+                <small>{CONTACT_EMAIL}</small>
+              </span>
+            </a>
+            <div className="contact-card">
+              <span className="contact-card__icon" aria-hidden="true">
+                <Icon name="clock" size={20} />
+              </span>
+              <span>
+                <strong>24/7 support</strong>
+                <small>Help is never more than a message away.</small>
+              </span>
+            </div>
+            <Link className="contact-card" to="/faqs">
+              <span className="contact-card__icon" aria-hidden="true">
+                <Icon name="headset" size={20} />
+              </span>
+              <span>
+                <strong>Visit FAQs</strong>
+                <small>Instant answers to the most common questions.</small>
+              </span>
+            </Link>
+          </div>
 
           <p className="contact__hint">
             Share your details in the form and our team will get back to you as quickly as
@@ -28,14 +59,6 @@ export default function Contact() {
             withdrawals, platform features, security settings and anything else you need to trade
             with confidence.
           </p>
-
-          <div className="contact__help">
-            <span>Need immediate help?</span>
-            <a href={`mailto:${CONTACT_EMAIL}`}>
-              <Icon name="mail" size={17} />
-              {CONTACT_EMAIL}
-            </a>
-          </div>
         </div>
 
         <RegistrationForm

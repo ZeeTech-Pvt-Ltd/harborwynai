@@ -1,8 +1,11 @@
 import { STEPS } from '../data/content'
 
-export default function HowItWorks() {
+export default function HowItWorks({ variant }) {
   return (
-    <section className="steps-band has-coins" id="how-it-works">
+    <section
+      className={`steps-band has-coins${variant === 'light' ? ' steps-band--light' : ''}`}
+      id="how-it-works"
+    >
       <img className="coin coin--xrp" src="/assets/img/coins/xrp-l-320.webp" alt="" loading="lazy" decoding="async" fetchPriority="low" />
       <img className="coin coin--tether-l" src="/assets/img/coins/tether-l-320.webp" alt="" loading="lazy" decoding="async" fetchPriority="low" />
       <div className="container">

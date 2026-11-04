@@ -16,6 +16,9 @@ export const OFFER_NAME = 'HarborwynAI-Site'
 export const NAV_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about-us' },
+  { label: 'How It Works', to: '/how-it-works' },
+  { label: 'Features', to: '/features' },
+  { label: 'Reviews', to: '/reviews' },
   { label: 'Contact Us', to: '/contact-us' },
   { label: 'FAQs', to: '/faqs' },
 ]
@@ -130,6 +133,59 @@ export const STEPS = [
   },
 ]
 
+// How It Works page - trading modes section.
+export const TRADING_MODES = [
+  {
+    title: 'Automated Mode',
+    text: 'Switch on the analysis engine and it scans the markets, flags potential opportunities and places trades according to the settings you choose - day and night.',
+    icon: 'chip',
+  },
+  {
+    title: 'Manual Mode',
+    text: 'Prefer to call the shots? Analyse the markets yourself and place every trade by hand, with the same fast execution and transparent fee display.',
+    icon: 'gauge',
+  },
+  {
+    title: 'Switch Any Time',
+    text: 'Your account, your rules. Move between automated and manual trading whenever you like - your funds and settings always stay under your control.',
+    icon: 'bolt',
+  },
+]
+
+// Features page - markets available through partnered brokers.
+export const FEATURES_MARKETS = [
+  {
+    title: 'Cryptocurrencies',
+    text: 'Bitcoin, Ethereum, Solana, BNB, USDT and more - trade the digital assets making headlines worldwide.',
+    icon: 'coins',
+  },
+  {
+    title: 'Forex',
+    text: 'Major, minor and exotic currency pairs, traded around the clock from a single account.',
+    icon: 'gauge',
+  },
+  {
+    title: 'Shares',
+    text: "Take positions on leading companies across the world's major exchanges.",
+    icon: 'bolt',
+  },
+  {
+    title: 'Commodities',
+    text: 'Energy and agricultural markets - diversify beyond currencies with physical-market instruments.',
+    icon: 'server',
+  },
+  {
+    title: 'Precious Metals',
+    text: 'Gold and silver positions for traders seeking time-tested stores of value.',
+    icon: 'vault',
+  },
+  {
+    title: 'CFDs',
+    text: 'Contracts for difference across a broad range of assets, with fees shown clearly upfront.',
+    icon: 'receipt',
+  },
+]
+
 export const TESTIMONIALS = [
   {
     name: 'James C.',
@@ -218,6 +274,14 @@ export const FAQS = [
 export const RATING = {
   score: '4.7',
   reviews: 189,
+  // Star distribution for the Reviews page summary panel.
+  breakdown: [
+    { stars: 5, pct: 82 },
+    { stars: 4, pct: 12 },
+    { stars: 3, pct: 4 },
+    { stars: 2, pct: 1 },
+    { stars: 1, pct: 1 },
+  ],
 }
 
 // Dedicated FAQs page - original phrasing, modeled on the reference

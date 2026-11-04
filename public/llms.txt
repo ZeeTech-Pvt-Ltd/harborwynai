@@ -8,6 +8,9 @@ Key pages and resources for the Harborwyn AI website.
 
 - [Home](https://harborwynai.io/): Harborwyn AI overview - platform features, security, testimonials and registration
 - [About Us](https://harborwynai.io/about-us): Our story, values and how the platform works
+- [How It Works](https://harborwynai.io/how-it-works): Three steps to your first trade, plus automated vs manual trading modes
+- [Features](https://harborwynai.io/features): Platform benefits, security features and available markets
+- [Reviews](https://harborwynai.io/reviews): Member testimonials and community feedback
 - [Contact Us](https://harborwynai.io/contact-us): Support and contact details
 - [FAQs](https://harborwynai.io/faqs): Frequently asked questions - fees, security, withdrawals and getting started
 

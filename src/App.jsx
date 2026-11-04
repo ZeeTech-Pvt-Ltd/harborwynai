@@ -9,6 +9,9 @@ import ThankYou from './pages/ThankYou'
 import NotFound from './pages/NotFound'
 import Faqs from './pages/Faqs'
 import AboutUs from './pages/AboutUs'
+import HowItWorks from './pages/HowItWorks'
+import Features from './pages/Features'
+import Reviews from './pages/Reviews'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfUse from './pages/TermsOfUse'
 import RiskDisclosure from './pages/RiskDisclosure'
@@ -34,6 +37,9 @@ export default function App() {
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/how-it-works" element={<HowItWorks />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/reviews" element={<Reviews />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/risk-disclosure" element={<RiskDisclosure />} />
