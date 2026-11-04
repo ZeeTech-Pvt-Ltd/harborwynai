@@ -1,10 +1,12 @@
+'use client'
+
 import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { usePathname } from 'next/navigation'
 
 // Reveals every [data-reveal] element as it scrolls into view.
 // Re-runs on route change so each page's elements are observed.
-export default function useReveal() {
-  const { pathname } = useLocation()
+export default function RevealObserver() {
+  const pathname = usePathname()
   useEffect(() => {
     const els = document.querySelectorAll('[data-reveal]')
     if (!('IntersectionObserver' in window)) {
@@ -25,4 +27,5 @@ export default function useReveal() {
     els.forEach((el) => observer.observe(el))
     return () => observer.disconnect()
   }, [pathname])
+  return null
 }

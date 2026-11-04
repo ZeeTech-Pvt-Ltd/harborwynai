@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 
 // Closing conversion section, styled as a floating gradient card above
 // the solid navy footer - CTA-only, points to the registration form in
@@ -22,7 +22,7 @@ export default function FinalCta() {
             <a className="btn btn--lime" href="#register">
               Open an account
             </a>
-            <Link className="btn btn--ghost" to="/contact-us">
+            <Link className="btn btn--ghost" href="/contact-us">
               Contact Us
             </Link>
           </div>

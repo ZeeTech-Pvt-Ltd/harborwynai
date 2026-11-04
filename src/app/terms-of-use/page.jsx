@@ -1,13 +1,15 @@
-import LegalPage, { LegalSection, ContactNote } from '../components/LegalPage'
+import LegalPage, { LegalSection, ContactNote } from '../../components/LegalPage'
+
+export const metadata = {
+  title: 'Harborwyn AI Terms of Use - Agreement & Conditions',
+  description:
+    'Harborwyn AI Terms of Use - the rules that govern your use of our website and trading platform.',
+  alternates: { canonical: '/terms-of-use' },
+}
 
 export default function TermsOfUse() {
   return (
-    <LegalPage
-      title="Terms of Use"
-      metaTitle="Harborwyn AI Terms of Use - Agreement & Conditions"
-      description="Harborwyn AI Terms of Use - the rules that govern your use of our website and trading platform."
-      updated="1 August 2026"
-    >
+    <LegalPage title="Terms of Use" updated="1 August 2026">
       <LegalSection heading="1. Acceptance of Terms">
         <p>
           Using the Harborwyn AI website and platform means you accept these Terms of Use in full.

@@ -1,15 +1,13 @@
-import { Link } from 'react-router-dom'
-import Icon from '../components/Icon'
-import useMeta from '../hooks/useMeta'
-import { SITE_URL } from '../data/content'
+import Link from 'next/link'
+import Icon from '../../components/Icon'
+
+export const metadata = {
+  title: 'Thank You for Registering with Harborwyn AI Platform',
+  description: 'Thank you for registering with Harborwyn AI. Our team will contact you shortly.',
+  alternates: { canonical: '/thank-you' },
+}
 
 export default function ThankYou() {
-  useMeta({
-    title: 'Thank You for Registering with Harborwyn AI Platform',
-    canonical: `${SITE_URL}/thank-you`,
-    description: 'Thank you for registering with Harborwyn AI. Our team will contact you shortly.',
-  })
-
   return (
     <main className="hero thank-you">
       <div className="hero__glow hero__glow--1" aria-hidden="true" />
@@ -24,7 +22,7 @@ export default function ThankYou() {
           We have received your registration. A member of our team will contact you shortly to
           help you get started.
         </p>
-        <Link to="/" className="btn btn--lime">
+        <Link href="/" className="btn btn--lime">
           Back to Home
         </Link>
       </div>

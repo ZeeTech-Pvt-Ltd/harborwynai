@@ -1,16 +1,15 @@
-import { Link } from 'react-router-dom'
-import Icon from '../components/Icon'
-import useMeta from '../hooks/useMeta'
-import { RATING, SITE_URL, TESTIMONIALS } from '../data/content'
+import Link from 'next/link'
+import Icon from '../../components/Icon'
+import { RATING, TESTIMONIALS } from '../../data/content'
+
+export const metadata = {
+  title: 'Harborwyn AI Reviews - Verified Member Testimonials',
+  description:
+    'Read verified Harborwyn AI reviews and testimonials from members worldwide. See what traders say about the AI-assisted platform.',
+  alternates: { canonical: '/reviews' },
+}
 
 export default function Reviews() {
-  useMeta({
-    title: 'Harborwyn AI Reviews - Verified Member Testimonials',
-    description:
-      'Read verified Harborwyn AI reviews and testimonials from members worldwide. See what traders say about the AI-assisted platform.',
-    canonical: `${SITE_URL}/reviews`,
-  })
-
   return (
     <main>
       {/* Hero - split: intro left, rating summary panel right */}
@@ -31,10 +30,10 @@ export default function Reviews() {
               Here is what they have to say about the platform.
             </p>
             <div style={{ display: 'flex', gap: 14, marginTop: 32, flexWrap: 'wrap' }}>
-              <Link to="/#register" className="btn btn--lime">
+              <Link href="/#register" className="btn btn--lime">
                 Register
               </Link>
-              <Link to="/faqs" className="btn btn--ghost">
+              <Link href="/faqs" className="btn btn--ghost">
                 Read FAQs
               </Link>
             </div>
@@ -126,7 +125,7 @@ export default function Reviews() {
         <div className="container faqs-cta">
           <h2>Ready to join the community?</h2>
           <p>Open an account from just $250 and see what the platform can do for you.</p>
-          <Link to="/#register" className="btn btn--lime">
+          <Link href="/#register" className="btn btn--lime">
             Register
           </Link>
         </div>

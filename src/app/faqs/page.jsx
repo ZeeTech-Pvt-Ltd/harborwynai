@@ -1,31 +1,30 @@
-import { Link } from 'react-router-dom'
-import FaqList from '../components/FaqList'
-import useMeta from '../hooks/useMeta'
-import { FAQS_PAGE, FAQ_QUICK_CARDS, SITE_URL } from '../data/content'
+import Link from 'next/link'
+import FaqList from '../../components/FaqList'
+import { FAQS_PAGE, FAQ_QUICK_CARDS } from '../../data/content'
+
+export const metadata = {
+  title: 'Harborwyn AI FAQs - Fees, Security & How Trading Works',
+  description:
+    'Harborwyn AI frequently asked questions - how the platform works, security, withdrawals, fees, and more.',
+  alternates: { canonical: '/faqs' },
+}
+
+const FAQ_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS_PAGE.map(({ q, a }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: a },
+  })),
+}
 
 export default function Faqs() {
-  useMeta({
-    title: 'Harborwyn AI FAQs - Fees, Security & How Trading Works',
-    canonical: `${SITE_URL}/faqs`,
-    description:
-      'Harborwyn AI frequently asked questions - how the platform works, security, withdrawals, fees, and more.',
-  })
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: FAQS_PAGE.map(({ q, a }) => ({
-      '@type': 'Question',
-      name: q,
-      acceptedAnswer: { '@type': 'Answer', text: a },
-    })),
-  }
-
   return (
     <main>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
       />
       {/* Hero header, modeled on the reference site's "Here to Help" */}
       <section className="hero">
@@ -76,7 +75,7 @@ export default function Faqs() {
         <div className="container faqs-cta">
           <h2>Can&apos;t find the answer you need?</h2>
           <p>Our team is ready to help with anything else.</p>
-          <Link to="/contact-us" className="btn btn--lime">
+          <Link href="/contact-us" className="btn btn--lime">
             Contact Us
           </Link>
         </div>

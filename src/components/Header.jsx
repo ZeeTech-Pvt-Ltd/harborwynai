@@ -1,12 +1,15 @@
+'use client'
+
 import { useState } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
 import Logo from './Logo'
 import { NAV_LINKS } from '../data/content'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
-  const navigate = useNavigate()
-  const { pathname } = useLocation()
+  const router = useRouter()
+  const pathname = usePathname()
 
   // Anchor items target sections on the home page; when navigating from
   // another route, go home first and then scroll.
@@ -16,14 +19,14 @@ export default function Header() {
     if (pathname === '/') {
       document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
     } else {
-      navigate('/')
+      router.push(`/#${id}`)
       setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 150)
     }
   }
 
   const renderItem = (item) =>
     item.to ? (
-      <Link key={item.label} to={item.to} onClick={() => setOpen(false)}>
+      <Link key={item.label} href={item.to} onClick={() => setOpen(false)}>
         {item.label}
       </Link>
     ) : (
@@ -66,7 +69,7 @@ export default function Header() {
               item.to ? (
                 <Link
                   key={item.label}
-                  to={item.to}
+                  href={item.to}
                   onClick={() => setOpen(false)}
                   style={{ padding: '10px 4px', fontSize: 16, color: 'var(--on-slate)' }}
                 >

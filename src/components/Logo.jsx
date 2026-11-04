@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import { BRAND } from '../data/content'
 
 // dark = rendered on the light page background
 export default function Logo({ dark = false }) {
   return (
-    <Link to="/" className={`logo${dark ? ' logo--dark' : ''}`} aria-label={`${BRAND} home`}>
+    <Link href="/" className={`logo${dark ? ' logo--dark' : ''}`} aria-label={`${BRAND} home`}>
       <span className="logo__mark">
         <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
           <g stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round">

@@ -1,17 +1,16 @@
-import { Link } from 'react-router-dom'
-import Icon from '../components/Icon'
-import RegistrationForm from '../components/RegistrationForm'
-import useMeta from '../hooks/useMeta'
-import { CONTACT_EMAIL, SITE_URL } from '../data/content'
+import Link from 'next/link'
+import Icon from '../../components/Icon'
+import RegistrationForm from '../../components/RegistrationForm'
+import { CONTACT_EMAIL } from '../../data/content'
+
+export const metadata = {
+  title: 'Contact Harborwyn AI - Get Expert Support & Assistance',
+  description:
+    'Contact Harborwyn AI - questions about the platform, technical assistance or collaborations. Our team is ready to help.',
+  alternates: { canonical: '/contact-us' },
+}
 
 export default function Contact() {
-  useMeta({
-    title: 'Contact Harborwyn AI - Get Expert Support & Assistance',
-    canonical: `${SITE_URL}/contact-us`,
-    description:
-      'Contact Harborwyn AI - questions about the platform, technical assistance or collaborations. Our team is ready to help.',
-  })
-
   return (
     <main className="contact">
       <div className="container contact__inner">
@@ -42,7 +41,7 @@ export default function Contact() {
                 <small>Help is never more than a message away.</small>
               </span>
             </div>
-            <Link className="contact-card" to="/faqs">
+            <Link className="contact-card" href="/faqs">
               <span className="contact-card__icon" aria-hidden="true">
                 <Icon name="headset" size={20} />
               </span>

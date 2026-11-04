@@ -1,17 +1,16 @@
-import { Link } from 'react-router-dom'
-import Icon from '../components/Icon'
-import useMeta from '../hooks/useMeta'
-import HowItWorksSection from '../sections/HowItWorks'
-import { SITE_URL, TRADING_MODES } from '../data/content'
+import Link from 'next/link'
+import Icon from '../../components/Icon'
+import HowItWorksSection from '../../sections/HowItWorks'
+import { TRADING_MODES } from '../../data/content'
+
+export const metadata = {
+  title: 'How It Works - Harborwyn AI Trading Explained Simply',
+  description:
+    'How Harborwyn AI works - sign up, deposit from $250 and start trading. Let the AI manage trades or drive manually through partnered, regulated brokers.',
+  alternates: { canonical: '/how-it-works' },
+}
 
 export default function HowItWorks() {
-  useMeta({
-    title: 'How It Works - Harborwyn AI Trading Explained Simply',
-    description:
-      'How Harborwyn AI works - sign up, deposit from $250 and start trading. Let the AI manage trades or drive manually through partnered, regulated brokers.',
-    canonical: `${SITE_URL}/how-it-works`,
-  })
-
   return (
     <main>
       {/* Hero header */}
@@ -41,10 +40,10 @@ export default function HowItWorks() {
               <span className="hero__point">Start from just $250</span>
             </div>
             <div style={{ display: 'flex', gap: 14, marginTop: 32, flexWrap: 'wrap' }}>
-              <Link to="/#register" className="btn btn--lime">
+              <Link href="/#register" className="btn btn--lime">
                 Register
               </Link>
-              <Link to="/faqs" className="btn btn--ghost">
+              <Link href="/faqs" className="btn btn--ghost">
                 Read FAQs
               </Link>
             </div>
@@ -86,7 +85,7 @@ export default function HowItWorks() {
         <div className="container faqs-cta">
           <h2>Ready to make your first trade?</h2>
           <p>Sign up, add $250 or more, and you&apos;re in.</p>
-          <Link to="/#register" className="btn btn--lime">
+          <Link href="/#register" className="btn btn--lime">
             Register
           </Link>
         </div>

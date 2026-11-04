@@ -1,13 +1,15 @@
-import LegalPage, { LegalSection, ContactNote } from '../components/LegalPage'
+import LegalPage, { LegalSection, ContactNote } from '../../components/LegalPage'
+
+export const metadata = {
+  title: 'Harborwyn AI Privacy Policy - Your Data, Protected',
+  description:
+    'Read the Harborwyn AI Privacy Policy - how we collect, use and protect your personal information.',
+  alternates: { canonical: '/privacy-policy' },
+}
 
 export default function PrivacyPolicy() {
   return (
-    <LegalPage
-      title="Privacy Policy"
-      metaTitle="Harborwyn AI Privacy Policy - Your Data, Protected"
-      description="Read the Harborwyn AI Privacy Policy - how we collect, use and protect your personal information."
-      updated="1 August 2026"
-    >
+    <LegalPage title="Privacy Policy" updated="1 August 2026">
       <LegalSection heading="1. Who We Are">
         <p>
           This Privacy Policy sets out how Harborwyn AI ("we", "us", "our") collects, uses and

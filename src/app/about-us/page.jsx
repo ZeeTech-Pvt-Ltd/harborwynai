@@ -1,13 +1,11 @@
-import { Link } from 'react-router-dom'
-import Icon from '../components/Icon'
-import useMeta from '../hooks/useMeta'
+import Link from 'next/link'
+import Icon from '../../components/Icon'
 import {
   ABOUT_FEATURES,
   STATS,
   STORY_STEPS,
-  SITE_URL,
   VALUES,
-} from '../data/content'
+} from '../../data/content'
 
 const HERO_STATS = [
   { value: '98+', label: 'Market availability' },
@@ -15,14 +13,14 @@ const HERO_STATS = [
   { value: '24/7', label: 'Trading access' },
 ]
 
-export default function AboutUs() {
-  useMeta({
-    title: 'About Harborwyn AI - AI-Powered Crypto Trading Platform',
-    description:
-      'About Harborwyn AI - our story, purpose, team and the transparency and controls behind the platform.',
-    canonical: `${SITE_URL}/about-us`,
-  })
+export const metadata = {
+  title: 'About Harborwyn AI - AI-Powered Crypto Trading Platform',
+  description:
+    'About Harborwyn AI - our story, purpose, team and the transparency and controls behind the platform.',
+  alternates: { canonical: '/about-us' },
+}
 
+export default function AboutUs() {
   return (
     <main>
       {/* Hero - split: text left, frosted stats panel right */}
@@ -42,10 +40,10 @@ export default function AboutUs() {
               efficiently and invest with full transparency.
             </p>
             <div style={{ display: 'flex', gap: 14, marginTop: 32, flexWrap: 'wrap' }}>
-              <Link to="/#register" className="btn btn--lime">
+              <Link href="/#register" className="btn btn--lime">
                 Register
               </Link>
-              <Link to="/contact-us" className="btn btn--ghost">
+              <Link href="/contact-us" className="btn btn--ghost">
                 Contact us
               </Link>
             </div>

@@ -1,18 +1,17 @@
-import { Link } from 'react-router-dom'
-import Icon from '../components/Icon'
-import useMeta from '../hooks/useMeta'
-import Benefits from '../sections/Benefits'
-import Security from '../sections/Security'
-import { FEATURES_MARKETS, SITE_URL } from '../data/content'
+import Link from 'next/link'
+import Icon from '../../components/Icon'
+import Benefits from '../../sections/Benefits'
+import Security from '../../sections/Security'
+import { FEATURES_MARKETS } from '../../data/content'
+
+export const metadata = {
+  title: 'Harborwyn AI Features - Smart Tools for Crypto Trading',
+  description:
+    'Explore Harborwyn AI features - AI-assisted market analysis, fast execution, bank-grade security and 24/7 trading from a single dashboard.',
+  alternates: { canonical: '/features' },
+}
 
 export default function Features() {
-  useMeta({
-    title: 'Harborwyn AI Features - Smart Tools for Crypto Trading',
-    description:
-      'Explore Harborwyn AI features - AI-assisted market analysis, fast execution, bank-grade security and 24/7 trading from a single dashboard.',
-    canonical: `${SITE_URL}/features`,
-  })
-
   return (
     <main>
       {/* Hero header */}
@@ -37,10 +36,10 @@ export default function Features() {
               around-the-clock access.
             </p>
             <div style={{ display: 'flex', gap: 14, marginTop: 32, flexWrap: 'wrap' }}>
-              <Link to="/#register" className="btn btn--lime">
+              <Link href="/#register" className="btn btn--lime">
                 Register
               </Link>
-              <Link to="/how-it-works" className="btn btn--ghost">
+              <Link href="/how-it-works" className="btn btn--ghost">
                 How It Works
               </Link>
             </div>
@@ -85,7 +84,7 @@ export default function Features() {
         <div className="container faqs-cta">
           <h2>See the features in action</h2>
           <p>Open an account from just $250 and explore the platform for yourself.</p>
-          <Link to="/#register" className="btn btn--lime">
+          <Link href="/#register" className="btn btn--lime">
             Register
           </Link>
         </div>

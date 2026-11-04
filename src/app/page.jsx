@@ -1,5 +1,3 @@
-import useMeta from '../hooks/useMeta'
-import { SITE_URL } from '../data/content'
 import Hero from '../sections/Hero'
 import Stats from '../sections/Stats'
 import TrustUs from '../sections/TrustUs'
@@ -12,24 +10,25 @@ import Testimonials from '../sections/Testimonials'
 import Faq from '../sections/Faq'
 import FinalCta from '../sections/FinalCta'
 
+export const metadata = {
+  title: 'Harborwyn AI - Official AI Crypto Trading Platform',
+  description:
+    'Harborwyn AI - AI-assisted crypto trading made simple. Trade Bitcoin, Ethereum, Solana and more from just $250, automated or manual, around the clock.',
+  alternates: { canonical: '/' },
+}
+
 export default function Home() {
-  useMeta({
-    title: 'Harborwyn AI - Official AI Crypto Trading Platform',
-    description:
-      'Harborwyn AI - AI-assisted crypto trading made simple. Trade Bitcoin, Ethereum, Solana and more from just $250, automated or manual, around the clock.',
-    canonical: `${SITE_URL}/`,
-  })
   return (
     <main>
       <Hero />
       <Stats />
-      <HowItWorks />
+      <TrustUs />
+      <ReviewsBand />
       <About />
       <Benefits />
-      <ReviewsBand />
-      <TrustUs />
-      <Testimonials />
       <Security />
+      <HowItWorks />
+      <Testimonials />
       <Faq />
       <FinalCta />
     </main>

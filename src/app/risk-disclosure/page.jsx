@@ -1,13 +1,15 @@
-import LegalPage, { LegalSection, ContactNote } from '../components/LegalPage'
+import LegalPage, { LegalSection, ContactNote } from '../../components/LegalPage'
+
+export const metadata = {
+  title: 'Harborwyn AI Risk Disclosure - Trading Risks Explained',
+  description:
+    'Harborwyn AI Risk Disclosure - trading financial markets carries substantial risk and is not suitable for every investor.',
+  alternates: { canonical: '/risk-disclosure' },
+}
 
 export default function RiskDisclosure() {
   return (
-    <LegalPage
-      title="Risk Disclosure"
-      metaTitle="Harborwyn AI Risk Disclosure - Trading Risks Explained"
-      description="Harborwyn AI Risk Disclosure - trading financial markets carries substantial risk and is not suitable for every investor."
-      updated="1 August 2026"
-    >
+    <LegalPage title="Risk Disclosure" updated="1 August 2026">
       <LegalSection heading="General Risk Warning">
         <p>
           Trading in financial markets - cryptocurrencies, equities, forex, commodities, precious

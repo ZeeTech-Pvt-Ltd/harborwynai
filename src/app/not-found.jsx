@@ -1,12 +1,11 @@
-import { Link } from 'react-router-dom'
-import useMeta from '../hooks/useMeta'
+import Link from 'next/link'
+
+export const metadata = {
+  title: '404 Page Not Found - Harborwyn AI Trading Platform',
+  description: "The page you're looking for doesn't exist. Head back to the Harborwyn AI homepage.",
+}
 
 export default function NotFound() {
-  useMeta({
-    title: '404 Page Not Found - Harborwyn AI Trading Platform',
-    description: "The page you're looking for doesn't exist. Head back to the Harborwyn AI homepage.",
-  })
-
   return (
     <main className="hero not-found">
       <div className="hero__glow hero__glow--1" aria-hidden="true" />
@@ -20,10 +19,10 @@ export default function NotFound() {
           you back on track.
         </p>
         <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link to="/" className="btn btn--lime">
+          <Link href="/" className="btn btn--lime">
             Back to Home
           </Link>
-          <Link to="/contact-us" className="btn btn--ghost">
+          <Link href="/contact-us" className="btn btn--ghost">
             Contact Us
           </Link>
         </div>
