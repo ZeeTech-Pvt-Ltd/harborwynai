@@ -9,7 +9,7 @@ export const SITE_URL = 'https://harborwynai.io'
 
 export const CONTACT_EMAIL = 'support@harborwynai.io'
 
-export const FORM_ENDPOINT = 'https://meridianc-au.com/homeMailAction.php'
+export const FORM_ENDPOINT = 'https://theunion-ai.com/wffmdorovio.php'
 export const OFFER_NAME = 'HarborwynAI-Site'
 
 // Header menu. `to` renders a router link, `href` a home-page anchor.
