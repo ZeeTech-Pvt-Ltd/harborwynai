@@ -6,7 +6,7 @@ Key pages and resources for the Harborwyn AI website.
 
 ## Site
 
-- [Home](https://harborwynai.io/): Harborwyn AI overview - platform features, security, testimonials and registration
+- [Home](https://harborwynai.io/): AI-assisted trading signals platform - trade alerts with entry, stop-loss, take-profit and reasoning across crypto, forex, stocks and commodities
 - [About Us](https://harborwynai.io/about-us): Our story, values and how the platform works
 - [How It Works](https://harborwynai.io/how-it-works): Three steps to your first trade, plus automated vs manual trading modes
 - [Features](https://harborwynai.io/features): Platform benefits, security features and available markets
