@@ -244,30 +244,249 @@ export const BAND_QUOTES = [
   },
 ]
 
+// Homepage - signal process (dark steps band). Verbatim from the content doc.
+export const SIGNAL_STEPS = [
+  {
+    title: 'Spotting momentum shifts',
+    text: 'The platform looks for moments when a market starts to change pace or direction.',
+  },
+  {
+    title: 'Checking the evidence',
+    text: 'Each possible trade is confirmed against key price levels and upcoming news that could affect it.',
+  },
+  {
+    title: 'Weighing the opportunity',
+    text: 'A signal moves forward only when the possible reward is clearly larger than the risk.',
+  },
+  {
+    title: 'Sending the plan',
+    text: 'A complete, easy-to-read alert lands on your device, ready for your review.',
+  },
+]
+
+// Homepage - sample alert card (illustrative, not a real trade). Verbatim.
+export const SAMPLE_ALERT = {
+  pair: 'GBP/USD',
+  direction: 'Sell',
+  entry: '1.2700',
+  stopLoss: '1.2740',
+  takeProfit: '1.2620',
+  rationale:
+    'The pair has been rejected at the same price area three times, and selling pressure is building.',
+}
+
+// Homepage - habits comparison table. Verbatim.
+export const HABITS = [
+  {
+    without: 'Overtrading on slow, quiet days',
+    withSignal: 'Fewer, better-quality setups',
+  },
+  {
+    without: 'Exiting in a panic when price dips',
+    withSignal: 'Exits planned before you enter',
+  },
+  {
+    without: 'Copying other traders without knowing why',
+    withSignal: 'Understanding the logic of each trade',
+  },
+  {
+    without: 'Hours of homework before every trade',
+    withSignal: 'A few minutes to review a ready plan',
+  },
+]
+
+// Homepage - quick highlights. Verbatim.
+export const HIGHLIGHTS = [
+  {
+    text: 'Crypto, forex, stocks and commodities, all covered',
+    icon: 'coins',
+  },
+  {
+    text: 'Stop-loss and take-profit included as standard',
+    icon: 'shield',
+  },
+  {
+    text: 'Works in your browser on any device',
+    icon: 'server',
+  },
+  {
+    text: 'A reason with every alert so you keep learning',
+    icon: 'eye',
+  },
+]
+
+// Homepage - why choose us (blue band). Verbatim.
+export const DIFFERENTIATORS = [
+  {
+    title: 'Quality over quantity',
+    text: 'We would rather send one strong setup than five weak ones.',
+  },
+  {
+    title: 'A teaching mindset',
+    text: 'Our alerts are written to help you understand the market, not just follow it.',
+  },
+  {
+    title: 'Respect for your time',
+    text: 'You get the conclusion of hours of research in a single message.',
+  },
+  {
+    title: 'Approachable support',
+    text: 'Our team is happy to help through live chat and email, whatever your level of experience.',
+  },
+]
+
+// Homepage - getting started steps (light band). Verbatim.
+export const GET_STARTED_STEPS = [
+  {
+    title: 'Register your details',
+    text: 'Add your name, email and phone number to get your account started.',
+  },
+  {
+    title: 'Confirm your identity',
+    text: 'Upload a valid ID to unlock your account and keep it secure.',
+  },
+  {
+    title: 'Deposit your first amount',
+    text: 'Select your preferred payment method and fund your balance.',
+  },
+  {
+    title: 'Choose your signals',
+    text: 'Pick the markets you want to follow, set your risk limits and wait for your first trade idea.',
+  },
+]
+
+// Homepage - markets grid. Verbatim.
+export const MARKETS = [
+  {
+    title: 'Crypto',
+    text: 'Bitcoin, Ethereum and other leading coins move quickly and trade every day, which rewards a clear plan.',
+    icon: 'coins',
+  },
+  {
+    title: 'Forex',
+    text: 'Pairs like EUR/USD and GBP/USD are driven by central bank decisions, economic data and global events.',
+    icon: 'gauge',
+  },
+  {
+    title: 'Stocks',
+    text: 'Large companies see regular price moves around earnings, product news and market trends.',
+    icon: 'bolt',
+  },
+  {
+    title: 'Commodities',
+    text: 'Gold, silver and oil shift with supply, demand and changes in the wider economy.',
+    icon: 'vault',
+  },
+]
+
+// Homepage - features grid. Verbatim.
+export const SIGNAL_FEATURES = [
+  {
+    title: 'Signals with substance',
+    text: 'Each alert holds the full trade plan and a short, clear explanation.',
+    icon: 'mail',
+  },
+  {
+    title: 'Your own watch levels',
+    text: 'Set the prices you care about and receive a notification when they are reached.',
+    icon: 'eye',
+  },
+  {
+    title: 'Clean dashboard',
+    text: 'Track your balance, active trades and history without any clutter.',
+    icon: 'server',
+  },
+  {
+    title: 'Device-friendly design',
+    text: 'Trade comfortably on mobile, tablet or desktop.',
+    icon: 'phone',
+  },
+  {
+    title: 'Freedom to adjust',
+    text: 'Use the suggested levels or tweak them to fit your own plan.',
+    icon: 'gauge',
+  },
+]
+
+// Homepage - who it's for cards. Verbatim.
+export const AUDIENCE = [
+  {
+    title: 'Hobby traders',
+    text: 'Enjoy the markets in your spare time with clear, structured ideas to follow.',
+    icon: 'smile',
+  },
+  {
+    title: 'Career-focused people',
+    text: 'Stay active in trading without letting it take over your working day.',
+    icon: 'clock',
+  },
+  {
+    title: 'Strategy builders',
+    text: 'Study our setups to refine your own methods and test new ideas.',
+    icon: 'chip',
+  },
+]
+
+// Homepage - security & transparency cards. Verbatim.
+export const SECURITY_PRICING = [
+  {
+    title: 'Encryption as standard',
+    text: 'Personal and payment details are protected from the moment you sign up.',
+    icon: 'lock',
+  },
+  {
+    title: 'Two-factor sign-in',
+    text: 'An extra security step keeps your account safe from unwanted access.',
+    icon: 'key',
+  },
+  {
+    title: 'Pricing with no surprises',
+    text: 'Every fee is shown clearly before you confirm anything.',
+    icon: 'receipt',
+  },
+  {
+    title: 'Every trade is your choice',
+    text: 'Harborwyn AI never acts on your account without your approval.',
+    icon: 'fingerprint',
+  },
+]
+
 export const FAQS = [
   {
-    q: 'How do I get started with Harborwyn AI?',
-    a: 'Sign up for a free account, add funds, and you can trade straight away. Run things yourself, or switch on the built-in analysis engine, which scans the markets and acts according to the settings you choose. Your funds and your settings always stay under your control.',
+    q: 'What is Harborwyn AI?',
+    a: 'Harborwyn AI is an AI-assisted trading signals platform that sends actionable trade alerts with an entry, stop-loss, take-profit and a written reason.',
   },
   {
-    q: 'How is my money protected?',
-    a: 'Several safeguards work together: 256-bit SSL encryption on every connection, 98% of funds held in offline cold storage, two-step login verification, and around-the-clock monitoring for unusual activity. Passwords are stored using one-way hashing, so nobody - not even our staff - can ever read them.',
+    q: 'Why are there fewer signals on some days?',
+    a: 'Signals are only sent when a setup meets our rules. On quiet market days, there may simply be fewer good opportunities. Members typically receive several signals per week, depending on market conditions.',
   },
   {
-    q: 'How quickly can I withdraw my funds?',
-    a: 'You can request a withdrawal from your dashboard whenever you like. Most requests are completed within 24-48 hours, and funds are returned to the payment method you originally used wherever possible.',
+    q: 'Can I follow just one market?',
+    a: 'Yes. You can choose to receive signals only for the markets you are interested in.',
   },
   {
-    q: 'Are there any hidden fees?',
-    a: 'No. Any cost attached to a transaction is shown clearly before you confirm it. If a fee applies, you will always see the exact amount first.',
+    q: 'Does every signal come with a reason?',
+    a: 'Yes. Each alert explains why the trade was suggested, so you always understand what you are acting on.',
   },
   {
-    q: 'Do I need any experience to use the platform?',
-    a: 'None whatsoever. The interface was built for first-timers, the minimum deposit is just $250, and the analysis engine plus built-in guides help you build confidence one step at a time.',
+    q: 'Is Harborwyn AI good for beginners?',
+    a: 'Yes. The alerts are written in simple language, so you can learn while you trade.',
   },
   {
-    q: 'Which markets can I access?',
-    a: 'From a single account you can trade a broad mix of instruments, including shares, currencies (forex), commodities, precious metals, CFDs and cryptocurrencies.',
+    q: 'Will Harborwyn AI trade for me?',
+    a: 'No. You review each signal and decide whether to place the trade.',
+  },
+  {
+    q: 'What is the minimum deposit?',
+    a: 'You can start with $250.',
+  },
+  {
+    q: 'How long do withdrawals take?',
+    a: 'Most withdrawal requests are processed within 24-48 hours, subject to account checks and your payment provider.',
+  },
+  {
+    q: 'Can I lose money?',
+    a: 'Yes. All trading involves risk, so only trade with money you can afford to lose.',
   },
 ]
 

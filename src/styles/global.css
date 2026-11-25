@@ -373,6 +373,36 @@ input {
   padding-block: clamp(72px, 9vw, 128px) clamp(88px, 10vw, 144px);
 }
 
+/* Shorter hero on the homepage */
+.hero__inner--compact {
+  padding-block: clamp(48px, 6vw, 80px) clamp(56px, 7vw, 96px);
+}
+
+.hero__micro {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--on-slate-muted);
+}
+
+.hero__micro-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero__micro-item svg {
+  flex-shrink: 0;
+  color: var(--lime);
+}
+
+.hero__micro-dot {
+  color: var(--lime);
+}
+
 .hero__eyebrow {
   display: inline-flex;
   align-items: center;
@@ -2436,4 +2466,415 @@ a.contact-card:hover {
   gap: 14px;
   margin-top: 36px;
   flex-wrap: wrap;
+}
+
+/* ---------- Homepage: signal service sections ---------- */
+
+/* Two-column card grid (used by 2- and 4-card rows) */
+.cards-2x2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+  .cards-2x2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Recipe analogy callout (Definition) */
+.definition__analogy {
+  margin: 28px auto 0;
+  max-width: 720px;
+  text-align: center;
+  padding: 18px 26px;
+  border-radius: 16px;
+  background: var(--blue-soft);
+  color: var(--blue-soft-ink);
+  font-size: 15.5px;
+}
+
+/* Four-item steps band variant */
+.steps-band__grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .steps-band__grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps-band__grid--4 .steps-band__item:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .steps-band__grid--4 .steps-band__item:nth-child(n + 3) {
+    border-top: 1px solid rgba(240, 247, 247, 0.16);
+  }
+
+  .steps-band--light .steps-band__item:nth-child(n + 3) {
+    border-top-color: rgba(4, 40, 33, 0.16);
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-band__grid--4 {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-band__grid--4 .steps-band__item:nth-child(n + 3) {
+    border-top: 0;
+  }
+}
+
+/* Sample alert card */
+.alert-card {
+  max-width: 720px;
+  margin-inline: auto;
+  background: var(--slate);
+  color: var(--on-slate);
+  border-radius: var(--radius-card);
+  padding: 28px 32px;
+  box-shadow: 0 30px 70px rgba(2, 6, 24, 0.35);
+}
+
+.alert-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.alert-card__id {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.alert-card__pair {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.alert-card__badge {
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: rgba(255, 138, 138, 0.16);
+  color: #ff9d9d;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.alert-card__label {
+  font-size: 12.5px;
+  color: var(--on-slate-muted);
+}
+
+.alert-card__levels {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.alert-card__levels > div {
+  background: rgba(240, 247, 247, 0.06);
+  border: 1px solid rgba(240, 247, 247, 0.18);
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: grid;
+  gap: 4px;
+}
+
+.alert-card__levels span {
+  font-size: 12.5px;
+  color: var(--on-slate-muted);
+}
+
+.alert-card__levels strong {
+  font-family: var(--font-heading);
+  font-size: 21px;
+  color: var(--lime);
+  letter-spacing: -0.02em;
+}
+
+.alert-card__why {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(240, 247, 247, 0.16);
+  font-size: 15px;
+  color: var(--on-slate-muted);
+}
+
+.alert-card__why strong {
+  color: var(--on-slate);
+}
+
+@media (max-width: 768px) {
+  .alert-card {
+    padding: 22px 20px;
+  }
+
+  .alert-card__levels {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Habits comparison table */
+.habits-table {
+  max-width: 860px;
+  margin-inline: auto;
+  border: 1px solid rgba(4, 40, 33, 0.14);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 10px 30px rgba(4, 40, 33, 0.08);
+}
+
+.habits-table__head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--slate);
+  color: var(--on-slate);
+  font-weight: 600;
+  font-size: 14.5px;
+}
+
+.habits-table__head span {
+  padding: 16px 22px;
+}
+
+.habits-table__head span + span {
+  border-left: 1px solid rgba(240, 247, 247, 0.18);
+}
+
+.habits-table__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 14.5px;
+}
+
+.habits-table__row + .habits-table__row {
+  border-top: 1px solid rgba(4, 40, 33, 0.1);
+}
+
+.habits-table__row > span {
+  padding: 14px 22px;
+  color: var(--ink-muted);
+}
+
+.habits-table__row > span + span {
+  border-left: 1px solid rgba(4, 40, 33, 0.1);
+}
+
+.habits-table__with {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--ink) !important;
+  font-weight: 500;
+}
+
+.habits-table__with svg {
+  flex-shrink: 0;
+  color: var(--lime);
+}
+
+@media (max-width: 768px) {
+  .habits-table__head span,
+  .habits-table__row > span {
+    padding: 12px 14px;
+    font-size: 13.5px;
+  }
+}
+
+/* Differentiators blue band */
+.diff-band {
+  background: var(--blue);
+  color: #ffffff;
+  padding-block: var(--section-pad);
+}
+
+.diff-band .section-head h2 {
+  color: #ffffff;
+}
+
+.diff-band .section-head p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.diff-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.diff-head h2 {
+  font-size: clamp(28px, 3.4vw, 40px);
+  color: #ffffff;
+}
+
+.diff-grid {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.diff-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-card);
+  padding: 26px;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.diff-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.diff-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--lime);
+  color: var(--on-lime);
+  display: grid;
+  place-items: center;
+}
+
+.diff-card h3 {
+  margin-top: 14px;
+  font-size: 17.5px;
+  color: #ffffff;
+}
+
+.diff-card p {
+  margin-top: 8px;
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 768px) {
+  .diff-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Features section - centered hairline list */
+.feature-list {
+  max-width: 860px;
+  margin-inline: auto;
+}
+
+.feature-row {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 22px 6px;
+  border-bottom: 1px solid rgba(4, 40, 33, 0.1);
+}
+
+.feature-row:first-child {
+  border-top: 1px solid rgba(4, 40, 33, 0.1);
+}
+
+.feature-row__icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: var(--blue-soft);
+  color: var(--blue);
+  display: grid;
+  place-items: center;
+}
+
+.feature-row h3 {
+  font-size: 17.5px;
+}
+
+.feature-row p {
+  margin-top: 4px;
+  font-size: 14.5px;
+  color: var(--ink-muted);
+  max-width: 62ch;
+}
+
+/* Risk notice card */
+.risk-notice {
+  max-width: 860px;
+  margin-inline: auto;
+  background: var(--white);
+  border: 1px solid rgba(4, 40, 33, 0.14);
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.risk-notice strong {
+  flex-shrink: 0;
+  color: var(--ink);
+  font-size: 14.5px;
+}
+
+.risk-notice p {
+  font-size: 14.5px;
+  color: var(--ink-muted);
+}
+
+/* Final CTA microcopy */
+.cta-final__micro {
+  margin-top: 14px;
+  font-size: 13.5px;
+  color: var(--on-slate-muted);
+}
+
+/* Definition section text (homepage, verbatim doc copy) */
+.definition__text {
+  max-width: 860px;
+  margin-inline: auto;
+  text-align: center;
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--ink-muted);
+}
+
+/* Smart Risk Management paragraph (homepage) */
+.risk-mgmt__text {
+  max-width: 860px;
+  margin-inline: auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink-muted);
+}
+
+/* Centered CTA row used by Why Choose Us / Get Started / Security */
+.diff-cta {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Risk notice card spacing inside Security & Transparency */
+.section .risk-notice {
+  margin-top: 32px;
+}
+
+/* Highlights cards hold just a phrase - no heading */
+.benefit-card > p:only-child {
+  margin-top: 0;
+  font-size: 15.5px;
+  color: var(--ink);
+  font-weight: 500;
 }

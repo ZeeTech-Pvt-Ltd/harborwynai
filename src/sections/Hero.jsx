@@ -1,8 +1,5 @@
 import Icon from '../components/Icon'
 import RegistrationForm from '../components/RegistrationForm'
-import { RATING } from '../data/content'
-
-const HIGHLIGHTS = ['Smart market analysis', 'Orders in an instant', 'Open 24/7']
 
 export default function Hero() {
   return (
@@ -13,54 +10,38 @@ export default function Hero() {
       <img className="coin coin--eth" src="/assets/img/coins/ethereum-f-320.webp" alt="" loading="lazy" decoding="async" fetchPriority="low" />
       <img className="coin coin--sol" src="/assets/img/coins/solana-l-320.webp" alt="" loading="lazy" decoding="async" fetchPriority="low" />
 
-      <div className="container hero__inner">
+      <div className="container hero__inner hero__inner--compact">
         <div>
-          <span className="hero__eyebrow">
-            <span className="dot" aria-hidden="true" />
-            Your AI-assisted trading partner
-          </span>
-
           <h1>
-            Harborwyn AI <span className="accent">Trading Platform</span>
+            Turn Market Moves Into Clear Trade Plans With{' '}
+            <span className="accent">Harborwyn AI</span>
           </h1>
 
           <p className="hero__sub">
-            An AI-assisted trading platform that brings crypto and traditional markets together,
-            with tools that make trading feel effortless. Open an account from just $250 and trade
-            Bitcoin, Ethereum, Solana and more - automatically or manually - through partnered,
-            regulated brokers.
+            The markets move all day, but you don’t have to watch them. Harborwyn AI does the
+            watching for you and sends a ready-made plan whenever a worthwhile opportunity shows
+            up.
           </p>
 
-          <div className="hero__points">
-            {HIGHLIGHTS.map((point) => (
-              <span className="hero__point" key={point}>
-                <Icon name="check" size={16} strokeWidth={2.5} />
-                {point}
-              </span>
-            ))}
-          </div>
-
-          <div
-            className="rating"
-            role="img"
-            style={{ marginTop: 28, color: 'var(--on-slate)' }}
-            aria-label={`Rated ${RATING.score} out of 5 from ${RATING.reviews} reviews`}
-          >
-            <span className="rating__stars" aria-hidden="true">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <Icon key={i} name="star" size={18} />
-              ))}
+          <p className="hero__micro">
+            <span className="hero__micro-item">
+              <Icon name="clock" size={15} strokeWidth={2.2} />
+              Sign up in minutes
             </span>
-            <span className="rating__score">{RATING.score}/5</span>
-            <span style={{ opacity: 0.75, fontSize: 14 }}>based on {RATING.reviews} reviews</span>
-          </div>
+            <span className="hero__micro-dot" aria-hidden="true">·</span>
+            <span className="hero__micro-item">
+              <Icon name="receipt" size={15} strokeWidth={2.2} />
+              Upfront fees
+            </span>
+            <span className="hero__micro-dot" aria-hidden="true">·</span>
+            <span className="hero__micro-item">
+              <Icon name="shield" size={15} strokeWidth={2.2} />
+              Protected personal data
+            </span>
+          </p>
         </div>
 
-        <RegistrationForm
-          idPrefix="hero"
-          title="Create your free account"
-          subtitle="Join 4m+ members and make your first trade in minutes."
-        />
+        <RegistrationForm idPrefix="hero" title="Create a Free Account" />
       </div>
     </section>
   )

@@ -1,8 +1,6 @@
 import Link from 'next/link'
 
-// Closing conversion section, styled as a floating gradient card above
-// the solid navy footer - CTA-only, points to the registration form in
-// the hero.
+// Section 16 - Final CTA. Verbatim from the content doc.
 export default function FinalCta() {
   return (
     <section className="hero cta-final" id="register-final">
@@ -11,21 +9,23 @@ export default function FinalCta() {
       <div className="container hero__inner cta-final__inner" data-reveal>
         <div>
           <h2 className="cta-final__heading">
-            Ready to start your <span className="accent">trading journey?</span>
+            Make Your Next Trade a <span className="accent">Smarter One</span>
           </h2>
           <p className="hero__sub">
-            Join 4m+ members who already trade with Harborwyn AI. A free account takes minutes to
-            open - and no experience is needed.
+            Let Harborwyn AI handle the research while you stay in charge of the decisions. Sign
+            up today and start receiving clear, explained trade plans.
           </p>
 
           <div className="cta-final__actions">
             <a className="btn btn--lime" href="#register">
-              Open an account
+              Join Harborwyn AI Today
             </a>
             <Link className="btn btn--ghost" href="/contact-us">
               Contact Us
             </Link>
           </div>
+
+          <p className="cta-final__micro">Takes about 2 minutes · No cost to join</p>
         </div>
       </div>
     </section>

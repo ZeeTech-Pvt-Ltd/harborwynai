@@ -6,9 +6,7 @@ export default function Faq() {
     <section className="section" id="faq">
       <div className="container">
         <div className="section-head" data-reveal>
-          <span className="eyebrow">FAQ</span>
-          <h2>Frequently asked questions</h2>
-          <p>Answers to the questions we hear most often.</p>
+          <h2>FAQs</h2>
         </div>
 
         <FaqList items={FAQS} />
